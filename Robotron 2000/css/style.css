@@ -233,19 +233,23 @@ main {
 }
 
 
+.listaDeCores {
+    margin: 0;
+    padding: 0.5rem;
+    width: 275px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
 
-.robotron-fala {
-   position: absolute;
-    font-size: 36px;
-    z-index: 2;
-    left: 50%;
-    top: -5%;
-    border: 1px solid black;
+.cores {
+    border: 1px solid white;
     border-radius: 100%;
-    padding: 0.5rem 1rem;
-    background-color: white;
+    cursor: pointer;
+    margin: 0.5rem;
 }
 
-.robotron-fala-invisible {
-    opacity: 0;
-}
+    .cores img {  
+        width: 100px;
+    }

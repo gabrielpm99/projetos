@@ -1,6 +1,6 @@
-const robotron = document.querySelector("#robotron");
-const subtrair = document.querySelectorAll(".subtrair");
-const somar = document.querySelectorAll(".somar");
+const robotron = document.querySelector("[data-robotron]");
+const botaoCores = document.querySelectorAll("[data-coresBtn]");
+const cores = document.querySelectorAll("[data-cores]");
 
 const controle = document.querySelectorAll("[data-controle]");
 
@@ -40,11 +40,15 @@ const pecas = {
     }
 }
 
-robotron.addEventListener("click", () => 
+
+botaoCores.forEach( (cor) => 
 {
-	const robotronFala = document.querySelector(".robotron-fala");
-	robotronFala.classList.toggle("robotron-fala-invisible");
-});
+    cor.addEventListener("click", (evento) => 
+    {
+        robotron.src = evento.target.src;
+    })
+})
+
 
 controle.forEach ( (elemento) => 
 {
