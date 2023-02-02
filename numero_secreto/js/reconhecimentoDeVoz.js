@@ -14,6 +14,7 @@ function onSpeak (e)
 	const chute = e.results[0][0].transcript;
 	exibirChuteNaTela(chute);
 	validarChute(chute)
+	gameOver(chute);
 }
 
 function exibirChuteNaTela (chute) 
@@ -25,4 +26,9 @@ function exibirChuteNaTela (chute)
 }
 
 
-recognition.addEventListener('end', () => recognition.start());
+recognition.addEventListener('end', ativarMicrofone);
+
+function ativarMicrofone () 
+{
+	recognition.start()
+}

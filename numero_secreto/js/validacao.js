@@ -38,24 +38,26 @@ function validarNumeroBetween (chute)
 function validarAcerto (chute) 
 {
 	if (chute == numeroSecreto) {
+		document.body.classList.add("gameOver")
 		container.innerHTML = `
-		<h1 class="titulo">Você acertou!</h1>
-		<h2 class="subtitulo">O número secreto era <span style="text-decoration: underline;">${numeroSecreto}</span></h2>
+		<h1 class="acertouTitle">Você acertou!</h1>
+		<h2 class="acertouSub">O número secreto era <span style="text-decoration: underline;">${numeroSecreto}</span></h2>
 		
-		<button class="reiniciar-btn" data-reiniciarBtn>Jogar novamente</button>
+		<button class="btn" data-reiniciarBtn>Jogar novamente</button>
 
 		<div class="fogos-container">
 			<img src="fogos.gif" class="fogos">
 			<img src="fogos.gif" class="fogos">
 		</div>
 		`;
+		
+		const reiniciarBtn = document.querySelector("[data-reiniciarBtn]")
+		
+		reiniciarJogo(reiniciarBtn);
 
-		const reiniciarBtn = document.querySelector("[data-reiniciarBtn]");
+		;
 
-		reiniciarBtn.addEventListener('click', () => 
-		{
-			window.location.reload();
-		})
+		
 
 	} else if (chute < numeroSecreto) {
 		mensagem.innerHTML += `
@@ -66,4 +68,33 @@ function validarAcerto (chute)
 			<p class="paragrafo">O número secreto é menor <i class="fa-solid fa-arrow-down icone"></i></p>
 			`;
 		}
+}
+
+
+function reiniciarJogo (botao) 
+{
+	botao.addEventListener('click', () => 
+	{
+		window.location.reload();
+	})
+}
+
+
+function gameOver (chute) 
+{
+	if (chute == "game over") {
+		recognition.removeEventListener('end', ativarMicrofone);
+
+		container.innerHTML = `
+		<h1 class="gameOverTexto">Game over</h1>
+
+		<button class="comecarBtn" data-comecarBtn>Começar</button>
+		`
+
+		const comecarBtn = document.querySelector("[data-comecarBtn]")
+
+		reiniciarJogo(comecarBtn);
+
+		document.body.classList.add("gameOver");
+	}
 }

@@ -1,11 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 :root {
-	--font-family: 'Open Sans', sans-serif;
+	--font-family: 'Odibee Sans', cursive;
 
 	--bg-color: #0AA1DD;
 	--primary-color: #E8F9FD;
 }
+
+.gameOver {
+	--bg-color: black;
+	--font-family: 'Press Start 2P', cursive;
+}
+	.gameOverTexto {
+		font-size: 5rem;
+		color: var(--primary-color);
+		text-transform: uppercase;
+		margin-bottom: 5rem;
+	}
+	.comecarBtn {
+		font-weight: bold;
+		text-transform: uppercase;
+		background-color: var(--primary-color);
+		font-family: var(--font-family);
+		padding: 0.8rem 5rem;
+		cursor: pointer;
+		border: 0;
+		border-radius: 8px;
+	}
+	.acertouTitle {
+		font-size: 3rem;
+		margin-bottom: 2rem;
+	}
+	.acertouSub {
+		font-size: 1.5rem;
+		margin-bottom: 5rem;
+	}
 
 body {
 	display: flex;
@@ -16,6 +46,8 @@ body {
 	color: var(--primary-color);
 	min-height: 100vh;
 	margin: 0;
+	transition: 0.5s;
+	letter-spacing: 2px;
 }
 
 .container {
@@ -33,22 +65,23 @@ body {
 }
 
 .subtitulo {
-	font-size: 2rem;
+	font-size: 3rem;
 	margin-bottom: 2.5rem;
 }	
 	.valores {
 		background-color: var(--bg-color);
+		font-family: var(--font-family);
 		border: none;
 		width: 8rem;
 		border-bottom: 2px dashed gray;
 		font-size: 2rem;
-		color: white;
+		color: var(--primary-color);
 		text-align: center;
 		font-weight: bold;
 	}
 
 .paragrafo {
-	font-size: 1.5rem;
+	font-size: 2rem;
 }
 
 .box {
@@ -78,11 +111,13 @@ body {
 	width: 30vw;
 }
 
-.reiniciar-btn {
+.btn {
 	padding: 0.8rem 1rem;
+	font-family: var(--font-family);
+	font-size: 1rem;
+	letter-spacing: 2px;
 	font-weight: bold;
 	text-transform: uppercase;
-	letter-spacing: 1px;
 	background-color: var(--primary-color);
 	border: 0;
 	border-radius: 8px;
