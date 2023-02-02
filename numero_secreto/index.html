@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<title>Número Secreto</title>
+	</head>
+	<body>
+		<main>
+			<section class="container" data-container>
+				<h1 class="titulo">Acerte o número secreto</h1>
+				<h3 class="subtitulo">O número secreto está entre <input class="valores" data-menor-valor value="0" maxlength="7"></input> e <input class="valores" data-maior-valor value="1000" maxlength="7"></input></h3>
+
+				<div class="mensagem" data-mensagem></div>
+			</section>
+		</main>
+
+		<script type="text/javascript" src="js/sortearNumero.js"></script>
+		<script type="text/javascript" src="js/reconhecimentoDeVoz.js"></script>
+		<script type="text/javascript" src="js/validacao.js"></script>
+	</body>
+</html>

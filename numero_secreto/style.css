@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+	--font-family: 'Open Sans', sans-serif;
+
+	--bg-color: #0AA1DD;
+	--primary-color: #E8F9FD;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--bg-color);
+	font-family: var(--font-family);
+	color: var(--primary-color);
+	min-height: 100vh;
+	margin: 0;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-weight: bold;
+	text-align: center;
+}
+
+.titulo {
+	font-size: 5rem;
+	margin: 0;
+	margin-bottom: 2rem;
+}
+
+.subtitulo {
+	font-size: 2rem;
+	margin-bottom: 2.5rem;
+}	
+	.valores {
+		background-color: var(--bg-color);
+		border: none;
+		width: 8rem;
+		border-bottom: 2px dashed gray;
+		font-size: 2rem;
+		color: white;
+		text-align: center;
+		font-weight: bold;
+	}
+
+.paragrafo {
+	font-size: 1.5rem;
+}
+
+.box {
+	display: inline-block;
+	border: 5px double var(--primary-color);
+	border-radius: 5px;
+	padding: 1rem 2rem;
+	font-size: 4rem;
+	margin: 1.5rem 0;
+}
+
+.icone {
+	margin-left: 5px;
+}
+
+.fogos-container {
+	position: absolute;
+	display: flex;
+	gap: 30%;
+	justify-content: space-around;
+	width: 100%;
+	top: 35%;
+	z-index: -1;
+}
+
+.fogos {
+	width: 30vw;
+}
+
+.reiniciar-btn {
+	padding: 0.8rem 1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	background-color: var(--primary-color);
+	border: 0;
+	border-radius: 8px;
+	cursor: pointer;
+}
