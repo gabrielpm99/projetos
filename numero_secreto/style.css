@@ -13,29 +13,41 @@
 	--font-family: 'Press Start 2P', cursive;
 }
 	.gameOverTexto {
-		font-size: 5rem;
-		color: var(--primary-color);
+		font-size: 2rem;
 		text-transform: uppercase;
-		margin-bottom: 5rem;
-	}
-	.comecarBtn {
-		font-weight: bold;
-		text-transform: uppercase;
-		background-color: var(--primary-color);
-		font-family: var(--font-family);
-		padding: 0.8rem 5rem;
-		cursor: pointer;
-		border: 0;
-		border-radius: 8px;
+		margin-bottom: 3rem;
 	}
 	.acertouTitle {
-		font-size: 3rem;
-		margin-bottom: 2rem;
+		font-size: 2rem;
+		margin-bottom: 1rem;
+		text-transform: uppercase;
 	}
 	.acertouSub {
-		font-size: 1.5rem;
-		margin-bottom: 5rem;
+		font-size: 1.3rem;
+		margin-bottom: 3rem;
 	}
+	.btn {
+		font-family: var(--font-family);
+		border: none;
+		border-radius: 8px;
+		background-color: var(--primary-color);
+		text-transform: uppercase;
+		padding: 0.5rem 2.5rem;
+		margin-bottom: 2rem;
+		cursor: pointer;
+	}
+	.fogos-container {
+		display: flex;
+		width: 100%;
+		position: absolute;
+		top: 100%;
+		justify-content: space-around;
+		z-index: -1;
+	}
+	.fogos {
+		width: 40%;
+	}
+
 
 body {
 	display: flex;
@@ -43,42 +55,40 @@ body {
 	justify-content: center;
 	background-color: var(--bg-color);
 	font-family: var(--font-family);
+	text-align: center;
 	color: var(--primary-color);
-	min-height: 100vh;
-	margin: 0;
+	height: 100vh;
 	transition: 0.5s;
-	letter-spacing: 2px;
 }
 
 .container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	font-weight: bold;
-	text-align: center;
+	position: relative;
+	width: 90vw;
 }
 
 .titulo {
-	font-size: 5rem;
-	margin: 0;
-	margin-bottom: 2rem;
+	font-size: 3rem;
+	margin-bottom: 1rem;
 }
 
 .subtitulo {
-	font-size: 3rem;
-	margin-bottom: 2.5rem;
-}	
-	.valores {
-		background-color: var(--bg-color);
-		font-family: var(--font-family);
-		border: none;
-		width: 8rem;
-		border-bottom: 2px dashed gray;
-		font-size: 2rem;
-		color: var(--primary-color);
-		text-align: center;
-		font-weight: bold;
-	}
+	font-size: 2rem;
+}
+
+.valores {
+	width: 6.5rem;
+	background-color: var(--bg-color);
+	border: none;
+	border-bottom: 2px dashed var(--primary-color);
+	font-size: 2rem;
+	color: var(--primary-color);
+	text-align: center;
+	font-family: var(--font-family);
+}
+
+.mensagem {
+	margin-top: 1rem;
+}
 
 .paragrafo {
 	font-size: 2rem;
@@ -86,40 +96,84 @@ body {
 
 .box {
 	display: inline-block;
+	font-size: 3rem;
 	border: 5px double var(--primary-color);
-	border-radius: 5px;
-	padding: 1rem 2rem;
-	font-size: 4rem;
-	margin: 1.5rem 0;
-}
-
-.icone {
-	margin-left: 5px;
-}
-
-.fogos-container {
-	position: absolute;
-	display: flex;
-	gap: 30%;
-	justify-content: space-around;
-	width: 100%;
-	top: 35%;
-	z-index: -1;
-}
-
-.fogos {
-	width: 30vw;
-}
-
-.btn {
-	padding: 0.8rem 1rem;
-	font-family: var(--font-family);
-	font-size: 1rem;
-	letter-spacing: 2px;
-	font-weight: bold;
-	text-transform: uppercase;
-	background-color: var(--primary-color);
-	border: 0;
 	border-radius: 8px;
-	cursor: pointer;
+	padding: 0.5rem;
+	margin: 0.5rem 0;
+}
+
+
+
+@media(min-width: 768px) {
+	.acertouSub {
+		font-size: 1.5rem;
+	}
+
+	.titulo, .box {
+		font-size: 4rem;
+	}
+
+	.subtitulo, .valores, .paragrafo {
+		font-size: 2.5rem;
+	}
+
+	.gameOverTexto {
+		font-size: 3.5rem;
+	}
+
+	.btn {
+		padding: 0.6rem 4rem;
+	}
+
+	.fogos-container {
+		justify-content: space-between;
+		top: 70%;
+	}
+
+	.fogos {
+		width: 30%;
+	}
+}
+
+
+
+@media(min-width: 1024px) {
+	.gameOverTexto {
+		margin-bottom: 4rem;
+		font-size: 4rem;
+	}
+
+	.btn {
+		font-size: 1rem;
+	}
+
+	.titulo, .box {
+		font-size: 5.5rem;
+	}
+
+	.box {
+		border-width: 6px;
+	}
+
+	.subtitulo, .valores, .paragrafo, {
+		font-size: 3rem;
+	}
+
+	.acertouTitle {
+		font-size: 2.5rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.acertouSub {
+		font-size: 1.5rem;
+	}
+
+	.valores {
+		border-width: 3px;
+	}
+
+	.fogos {
+		width: 20%;
+	}
 }

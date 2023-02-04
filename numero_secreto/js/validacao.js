@@ -88,7 +88,7 @@ function gameOver (chute)
 		container.innerHTML = `
 		<h1 class="gameOverTexto">Game over</h1>
 
-		<button class="comecarBtn" data-comecarBtn>Começar</button>
+		<button class="btn" data-comecarBtn>Começar</button>
 		`
 
 		const comecarBtn = document.querySelector("[data-comecarBtn]")
