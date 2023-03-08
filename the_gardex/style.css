@@ -46,7 +46,12 @@ footer {
 	color: white;
 	font-size: 20px;
 	font-weight: bold;
+	cursor: pointer;
 }
+
+	.cor-texto:hover {
+		color: gray;
+	}
 
 .cor-brand {
 	display: flex;
@@ -55,7 +60,12 @@ footer {
 	font-size: 28px;
 	padding: 0;
 	width: 40%;
+	cursor: pointer;
 }
+
+	.cor-brand:hover {
+		color: gray;
+	}
 
 .brand-img {
 	width: 15%;
@@ -111,6 +121,102 @@ footer {
 	padding: 0.8rem 0;
 	align-items: center;
 }
+
+.tag-container {
+	width: 70vw;
+	margin: 0 auto;
+}
+
+.tag {
+	display: inline-block;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	padding: 0.5rem 1rem;
+	border-radius: 8px;
+	background-color: #d81014;
+	margin: 0;
+	font-size: 18px;
+}
+
+
+
+
+
+.pokedex {
+	margin-top: 2rem;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.pokedex li {
+	width: 22%;
+	margin: 0 4% 3rem 0;
+}
+
+	.pokedex li:nth-child(4n) {
+		margin-right: 0;
+	}
+
+.pokedex li img {
+	width: 100%;
+	background-color: #302c44;
+	border-radius: 8px;
+}
+
+.pokedex .numero {
+	font-size: 12px;
+	margin-bottom: 0.5rem;
+}
+
+.pokedex p {
+	margin: 0;
+	font-weight: bold;
+}
+
+.pokedex h2 {
+	font-weight: bold;
+	font-size: 24px;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+.pokedex .tipo {
+	padding: 0.2rem 1rem;
+	border-radius: 100px;
+	font-size: 12px;
+}
+
+.grass {
+	background-color: #80cc54;
+}
+
+.poison {
+	background-color: #a03c9c;
+}
+
+.fire {
+	background-color: #f07c3c;
+}
+
+.flying {
+	background-color: #b08cec;
+}
+
+.water {
+	background-color: #7094ec;
+}
+
+.bug {
+	background-color: #789c3c;
+}
+
+.normal {
+	background-color: #a8acac;
+}
+
+
 
 
 
@@ -203,6 +309,28 @@ footer {
 		position: static;
 		padding: 0;
 	}
+
+	.tag-container {
+		width: 90vw;
+	}
+
+	.tag {
+		font-size: 14px;
+	}
+
+
+
+	.pokedex {
+		justify-content: center;
+	}
+
+	.pokedex li {
+		width: 75%;
+	}
+
+	.pokedex .tipo {
+		font-size: 15px;
+	}
 }
 
 
@@ -216,12 +344,35 @@ footer {
 	.brand-img {
 		width: 25%;
 	}
+
+	.tag-container {
+		width: 75vw;
+	}
+
+	.tag {
+		font-size: 18px;
+	}
+
+
+
+	.pokedex {
+		justify-content: flex-start;
+	}
+
+	.pokedex li {
+		margin-right: 0;
+		width: 45%;
+	}
+
+		.pokedex li:nth-child(2n) {
+			margin-left: 10%;
+		}
 }
 
 
 
 
-@media(min-width: 1024px) and (max-width: 1279px) {
+@media(min-width: 990px) and (max-width: 1279px) {
 	.brand-img {
 		width: 40%;
 	}
@@ -249,6 +400,18 @@ footer {
 	.navbar-lista div li {
 		margin-right: 1rem;
 	}
+
+
+
+
+	.main-container .pokedex li {
+		width: 30%;
+		margin: 0 5% 3rem 0;
+	}
+
+		.main-container .pokedex li:nth-child(3n) {
+			margin-right: 0;
+		}
 }
 
 

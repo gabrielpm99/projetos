@@ -1,0 +1,58 @@
+{
+	"pokemons": [
+		{
+			"nome": "Bulbasaur",
+			"numero": "N° 0001",
+			"imagem": "",
+			"tipo": "Grass",
+			"tipo2": "Poison"
+		},
+		{
+			"nome": "Ivysaur",
+			"numero": "N° 0002",
+			"imagem": "",
+			"tipo": "Grass",
+			"tipo2": "Poison"
+		},
+		{
+			"nome": "Venusaur",
+			"numero": "N° 0003",
+			"imagem": "",
+			"tipo": "Grass",
+			"tipo2": "Poison"
+		},
+		{
+			"nome": "Charmander",
+			"numero": "N° 0004",
+			"imagem": "",
+			"tipo": "Fire"
+
+		},
+		{
+			"nome": "Charmeleon",
+			"numero": "N° 0005",
+			"imagem": "",
+			"tipo": "Fire"
+
+		},
+		{
+			"nome": "Charizard",
+			"numero": "N° 0006",
+			"imagem": "",
+			"tipo": "Fire",
+			"tipo2": "Flying"
+		},
+		{
+			"nome": "Squirtle",
+			"numero": "N° 0007",
+			"imagem": "",
+			"tipo": "Water",
+		},
+		{
+			"nome": "Wartortle",
+			"numero": "N° 0008",
+			"imagem": "",
+			"tipo": "Water",
+		}
+	]
+}
