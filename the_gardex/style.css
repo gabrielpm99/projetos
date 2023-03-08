@@ -80,7 +80,7 @@ footer {
 	color: white;
 	border-radius: 8px;
 	letter-spacing: 1px;
-	padding: 2rem 3rem;
+	padding: 3rem 3rem;
 }
 
 .main-titulo {
@@ -144,7 +144,7 @@ footer {
 
 
 .pokedex {
-	margin-top: 2rem;
+	margin: 2rem 0 0 0;
 	padding: 0;
 	display: flex;
 	flex-wrap: wrap;
@@ -214,6 +214,14 @@ footer {
 
 .normal {
 	background-color: #a8acac;
+}
+
+.electric {
+	background-color: #f0d434;
+}
+
+.ground {
+	background-color: #b09c44;
 }
 
 
@@ -325,7 +333,8 @@ footer {
 	}
 
 	.pokedex li {
-		width: 75%;
+		width: 65%;
+		margin-right: 0;
 	}
 
 	.pokedex .tipo {
