@@ -185,6 +185,41 @@ footer {
 	font-size: 12px;
 }
 
+.vermais-container {
+	margin-top: 2rem;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.vermais {
+	background-color: #302c74;
+	border: none;
+	border-radius: 8px;
+	color: white;
+	font-weight: bold;
+	padding: 0.5rem 2rem;
+	letter-spacing: 1px;
+}
+
+.pokedex-busca {
+	display: flex;
+	width: 200px;
+}
+
+	.pokedex-busca img {
+		width: 40px;
+		background-color: gray;
+		border-radius: 0 10px 10px 0;
+		cursor: pointer;
+	}
+
+	.pokedex-busca input {
+		width: 100%;
+		border: none;
+	}
+
+
 .grass {
 	background-color: #80cc54;
 }
@@ -220,6 +255,44 @@ footer {
 .ground {
 	background-color: #b09c44;
 }
+
+.fairy {
+	background-color: #ffbcec;
+}
+
+.fighting {
+	background-color: #d86424;
+}
+
+.psychic {
+	background-color: #f864bc;
+}
+
+.rock {
+	background-color: #a88c24;
+}
+
+.steel {
+	background-color: #a0b4bc;
+}
+
+.ice {
+	background-color: #58c4e4;
+}
+
+.dragon {
+	background-color: #7468e0;
+}
+
+.ghost {
+	background-color: #8064a4;
+}
+
+.dark {
+	background-color: #787474;
+}
+
+
 
 
 
@@ -380,6 +453,10 @@ footer {
 
 	.pokedex .tipo {
 		font-size: 15px;
+	}
+
+	.vermais-container {
+		padding-bottom: 2rem;
 	}
 
 

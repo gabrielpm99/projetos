@@ -1,10 +1,17 @@
 const pokedex = document.querySelector("[data-pokedex]")
+const verMais = document.querySelector("[data-verMais]")
 
-async function buscarPokemons (pokemon) 
+let quantidadeDePokemons = 28;
+
+verMais.addEventListener('click', () => 
 {
-	let quantidadeDePokemons = 28;
+	quantidadeDePokemons += 28;
+	apiPokemons();
+});
 
-	for(let i = 0; i < quantidadeDePokemons; i++) {
+async function apiPokemons (pokemon) 
+{
+	for(let i = quantidadeDePokemons - 28; i < quantidadeDePokemons; i++) {
 		const conexao = await fetch(`https://pokeapi.co/api/v2/pokemon/${i+1}/`);
 		const conexaoConvertida = await conexao.json();
 
@@ -12,7 +19,7 @@ async function buscarPokemons (pokemon)
 	}
 }
 
-buscarPokemons()
+apiPokemons()
 
 function montarPokemons (pokemon, ordem) 
 {
