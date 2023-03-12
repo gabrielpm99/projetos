@@ -360,7 +360,7 @@ footer {
 	font-size: 17px;
 	font-weight: bold;
 	width: 16%;
-	margin: 0 0.8% 0.8% 0;
+	margin: 0 0.8% 1rem 0;
 }
 
 	.natures:nth-child(6n) {
@@ -531,7 +531,7 @@ footer {
 	}
 
 	.natures {
-		font-size: 7px;
+		font-size: 6px;
 		word-wrap: break-word;
 	}
 }
