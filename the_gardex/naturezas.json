@@ -1,0 +1,28 @@
+{
+	"naturezas": [
+		{
+			"row": ["No charge", "-Attack", "-Defense", "-Sp.Atk", "-Sp.Def", "-Speed"],
+			"cor":	["#201c5c", "#18143c", "#18143c", "#18143c", "#18143c", "#18143c"]
+		},
+		{
+			"row": ["+Attack", "Hardy", "Lonely", "Adamant", "Naugthy", "Brave"],
+			"cor":	["#18143c", "#201c5c", "#403c74", "#403c74", "#403c74", "#403c74"]
+		},
+		{
+			"row": ["+Defense", "Bold", "Dolice", "Impish", "Lax", "Relaxed"],
+			"cor":	["#18143c", "#302c44", "#201c5c", "#302c44", "#302c44", "#302c44"]
+		},
+		{
+			"row": ["+Sp.Atk", "Modest", "Mild", "Bashful", "Rash", "Quiet"],
+			"cor":	["#18143c", "#403c74", "#403c74", "#201c5c", "#403c74", "#403c74"]
+		},
+		{
+			"row": ["+Sp.Def", "Calm", "Gentle", "Careful", "Quirky", "Sassy"],
+			"cor":	["#18143c", "#302c44", "#302c44", "#302c44", "#201c5c", "#302c44"]
+		},
+		{
+			"row": ["+Speed", "Timid", "Hasty", "Jolly", "Naive", "Serious"],
+			"cor":	["#18143c", "#403c74", "#403c74", "#403c74", "#403c74", "#201c5c"]
+		}
+	]
+}

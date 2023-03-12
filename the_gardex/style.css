@@ -260,7 +260,7 @@ footer {
 	background-color: #ffbcec;
 }
 
-.fighting {
+.fighting, .fight {
 	background-color: #d86424;
 }
 
@@ -342,6 +342,43 @@ footer {
 		border-radius: 8px;
 	}
 
+
+
+
+
+
+.nature-container {
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+}
+
+.natures {
+	padding: 1rem 0;
+	text-align: center;
+	font-size: 17px;
+	font-weight: bold;
+	width: 16%;
+	margin: 0 0.8% 0.8% 0;
+}
+
+	.natures:nth-child(6n) {
+		margin-right: 0;
+	}
+
+
+
+
+
+.tipos-container {
+	display: flex;
+	justify-content: center;
+}
+
+.tipos {
+	width: 75%;
+}
 
 
 
@@ -485,6 +522,18 @@ footer {
 	.iniciais {
 		width: 100%;
 	}
+
+
+
+
+	.nature-container {
+		padding-bottom: 1rem;
+	}
+
+	.natures {
+		font-size: 7px;
+		word-wrap: break-word;
+	}
 }
 
 
@@ -529,6 +578,13 @@ footer {
 
 	.iniciais {
 		width: 75%;
+	}
+
+
+
+
+	.natures {
+		font-size: 14px;
 	}
 }
 
