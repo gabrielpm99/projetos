@@ -2,10 +2,10 @@ const grid = document.querySelector("[data-gridNature]");
 
 async function apiNatures () 
 {
-	const conexao = await fetch("http://localhost:3000/naturezas");
+	const conexao = await fetch("https://gabrielpm99.github.io/projetos/the_gardex/naturezas.json");
 	const conexaoConvertida = await conexao.json();
-
-	conexaoConvertida.forEach((elemento) => 
+	
+	conexaoConvertida.naturezas.forEach((elemento) => 
 	{
 		for(let i = 0; i < elemento.row.length; i++) {
 			grid.appendChild(criarGrid(elemento.row[i], elemento.cor[i]));
