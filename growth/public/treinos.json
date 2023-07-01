@@ -1,0 +1,54 @@
+{
+    "treinos": [
+        {
+            "nome": "Supino reto com barra",
+            "quantidade": "5x até a falha",
+            "dia": "A",
+            "imagem": "./imagens/supino-reto.gif",
+            "adicional": "Progressão de carga" 
+        }, 
+        {
+            "nome": "Supino inclinado",
+            "quantidade": "4x de 6 a 10",
+            "dia": "A",
+            "imagem": "./imagens/supino-inclinado.gif"
+        }, 
+        {
+            "nome": "Crucifixo inclinado",
+            "quantidade": "4x de 6 a 10",
+            "dia": "A",
+            "imagem": "./imagens/crucifixo-inclinado.webp"
+        }, 
+        {
+            "nome": "Crucifixo no cross over",
+            "quantidade": "4x de 6 a 10",
+            "dia": "A",
+            "imagem": "./imagens/crucifixo-crossover.gif"
+        }, 
+        {
+            "nome": "Tríceps corda",
+            "quantidade": "4x de 6 a 10",
+            "dia": "A",
+            "imagem": "./imagens/triceps-corda.webp"
+        }, 
+        {
+            "nome": "Tríceps francês",
+            "quantidade": "4x de 6 a 10",
+            "dia": "A",
+            "imagem": "./imagens/triceps-frances.webp"
+        }, 
+        {
+            "nome": "Tríceps testa no cross over",
+            "quantidade": "4x de 6 a 10",
+            "dia": "A",
+            "imagem": "./imagens/triceps-testa.gif"
+        }, 
+        {
+            "nome": "Tríceps pulley",
+            "quantidade": "3x de 10 + 10 + 10",
+            "dia": "A",
+            "imagem": "./imagens/triceps-pulley.webp",
+            "adicional": "Drop"
+        }
+    ]
+}
