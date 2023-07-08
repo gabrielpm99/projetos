@@ -1,9 +1,9 @@
 import './navbar.css';
 
-function NavbarAnchor () 
+function NavbarAnchor ({ diaDeTreino, filtrarTreino }) 
 {
     return (
-        <li></li>
+        <li className='navbar-item'><a onClick={(e) => filtrarTreino(diaDeTreino, e)}>Treino {diaDeTreino}</a></li>
     )
 }
 

@@ -1,0 +1,22 @@
+.navbar-item:not(.navbar-item:first-child) {
+    margin-left: 3rem;
+}
+
+.navbar-item {
+    cursor: pointer;
+    font-size: 22px;
+    background-color: #71797E;
+    padding: 8px 20px;
+    border-radius: 8px;
+    transition: 0.15s;
+    box-shadow: 2px 2px 3px white;
+}
+
+    .navbar-item:hover {
+        color: black;
+        background-color: #51595E;
+    }
+
+    .active {
+        color: gray;
+    }

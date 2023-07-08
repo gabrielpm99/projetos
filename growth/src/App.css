@@ -39,7 +39,7 @@
 }
 
 .lista-treinos {
-  width: 60%;
+  width: 75%;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;

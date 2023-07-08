@@ -3,6 +3,8 @@
 }
 
 .navbar {
+    display: flex;
+    justify-content: center;
     background-color: black;
     margin: 0 0 3rem 0;
     padding: 30px 0;

@@ -49,6 +49,215 @@
             "dia": "A",
             "imagem": "./imagens/triceps-pulley.webp",
             "adicional": "Drop"
+        },
+        {
+            "nome": "Agachamento livre",
+            "quantidade": "4x de 6 a 10",
+            "dia": "B",
+            "imagem": "./imagens/agachamento-livre.webp",
+            "adicional": "Progressão de carga" 
+        },
+        {
+            "nome": "Cadeira extensora",
+            "quantidade": "4x de 10 + 10",
+            "dia": "B",
+            "imagem": "./imagens/cadeira-extensora.webp",
+            "adicional": "Drop" 
+        },
+        {
+            "nome": "Leg press",
+            "quantidade": "4x de 6 a 10",
+            "dia": "B",
+            "imagem": "./imagens/leg-press.gif",
+            "adicional": "Progressão de carga" 
+        },
+        {
+            "nome": "Hack machine",
+            "quantidade": "4x de 15",
+            "dia": "B",
+            "imagem": "./imagens/hack-machine.webp" 
+        },
+        {
+            "nome": "Cadeira adutora",
+            "quantidade": "4x de 15",
+            "dia": "B",
+            "imagem": "./imagens/cadeira-adutora.webp" 
+        },
+        {
+            "nome": "Passada",
+            "quantidade": "4x até a falha",
+            "dia": "B",
+            "imagem": "./imagens/passada.webp" 
+        },
+        {
+            "nome": "Panturrilha sentado",
+            "quantidade": "4x de 30",
+            "dia": "B",
+            "imagem": "./imagens/panturrilha-sentado.gif" 
+        },
+        {
+            "nome": "Barra livre",
+            "quantidade": "3x até a falha",
+            "dia": "C",
+            "imagem": "./imagens/barra-livre.webp" 
+        },
+        {
+            "nome": "Remada curvada com halteres",
+            "quantidade": "4x de 6 a 10",
+            "dia": "C",
+            "imagem": "./imagens/remada-curvada.gif" 
+        },
+        {
+            "nome": "Remada no aparelho",
+            "quantidade": "4x até a falha",
+            "dia": "C",
+            "imagem": "./imagens/remada-aparelho.gif",
+            "adicional": "Progressão de carga" 
+        },
+        {
+            "nome": "Pulley de frente",
+            "quantidade": "4x de 6 a 10",
+            "dia": "C",
+            "imagem": "./imagens/pulley-frente.webp" 
+        },
+        {
+            "nome": "Pull down",
+            "quantidade": "4x de 10 + 10",
+            "dia": "C",
+            "imagem": "./imagens/pull-down.gif",
+            "adicional": "Drop" 
+        },
+        {
+            "nome": "Rosca direta",
+            "quantidade": "4x de 6 a 10",
+            "dia": "C",
+            "imagem": "./imagens/rosca-direta.webp" 
+        },
+        {
+            "nome": "Rosca scotch",
+            "quantidade": "4x de 10 + 10 + 10",
+            "dia": "C",
+            "imagem": "./imagens/rosca-scotch.webp",
+            "adicional": "Drop" 
+        },
+        {
+            "nome": "Rosca alternada",
+            "quantidade": "4x de 10",
+            "dia": "C",
+            "imagem": "./imagens/rosca-alternada.gif",
+            "adicional": "Banco inclinado" 
+        },
+        {
+            "nome": "Abdominal supra",
+            "quantidade": "4x de 20",
+            "dia": "C",
+            "imagem": "./imagens/abdominal-supra.webp" 
+        },
+        {
+            "nome": "Abdominal oblíquo",
+            "quantidade": "4x de 30",
+            "dia": "C",
+            "imagem": "./imagens/abdominal-obliquo.gif"
+        },
+        {
+            "nome": "Abdominal infra",
+            "quantidade": "4x de 15",
+            "dia": "C",
+            "imagem": "./imagens/abdominal-infra.webp" 
+        },
+        {
+            "nome": "Desenvolvimento sentado na barra guiada",
+            "quantidade": "4x de 6 a 10",
+            "dia": "D",
+            "imagem": "./imagens/desenvolvimento-sentado.webp"
+        },
+        {
+            "nome": "Elevação lateral na polia baixa",
+            "quantidade": "4x de 15",
+            "dia": "D",
+            "imagem": "./imagens/elevacao-polia-baixa.gif"
+        },
+        {
+            "nome": "Elevação lateral",
+            "quantidade": "4x de 6 a 10",
+            "dia": "D",
+            "imagem": "./imagens/elevacao-lateral.webp"
+        },
+        {
+            "nome": "Elevação frontal banco",
+            "quantidade": "4x de 15",
+            "dia": "D",
+            "imagem": "./imagens/elevacao-frontal.gif"
+        },
+        {
+            "nome": "Elevação frontal no cross over",
+            "quantidade": "4x de 6 a 10",
+            "dia": "D",
+            "imagem": "./imagens/elevacao-crossover.gif"
+        },
+        {
+            "nome": "Remada alta no cross over",
+            "quantidade": "4x de 6 a 10",
+            "dia": "E",
+            "imagem": "./imagens/remada-alta.webp"
+        },
+        {
+            "nome": "Ombro fly",
+            "quantidade": "4x de 10",
+            "dia": "D",
+            "imagem": "./imagens/ombro-fly.webp"
+        },
+        {
+            "nome": "Encolhimento com barra",
+            "quantidade": "4x de 6 a 10",
+            "dia": "D",
+            "imagem": "./imagens/encolhimento-barra.gif"
+        },
+        {
+            "nome": "Agachamento livre",
+            "quantidade": "4x de 6 a 10",
+            "dia": "E",
+            "imagem": "./imagens/agachamento-livre.webp",
+            "adicional": "Progressão de carga" 
+        },
+        {
+            "nome": "Levantamento terra sumô",
+            "quantidade": "4x até a falha",
+            "dia": "E",
+            "imagem": "./imagens/terra-sumo.gif",
+            "adicional": "Progressão de carga" 
+        },
+        {
+            "nome": "Leg press",
+            "quantidade": "4x de 6 a 10",
+            "dia": "E",
+            "imagem": "./imagens/leg-press.gif",
+            "adicional": "Progressão de carga" 
+        },
+        {
+            "nome": "Mesa flexora",
+            "quantidade": "4x de 10 + 10",
+            "dia": "E",
+            "imagem": "./imagens/mesa-flexora.webp",
+            "adicional": "Drop" 
+        },
+        {
+            "nome": "Stiff",
+            "quantidade": "4x de 10",
+            "dia": "E",
+            "imagem": "./imagens/stiff.gif"
+        },
+        {
+            "nome": "Flexão de joelhos em pé",
+            "quantidade": "4x de 10",
+            "dia": "E",
+            "imagem": "./imagens/flexao-joelho.gif"
+        },
+        {
+            "nome": "Panturrilha no leg press",
+            "quantidade": "4x de 30",
+            "dia": "E",
+            "imagem": "./imagens/panturrilha-leg.webp"
         }
     ]
 }

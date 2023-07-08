@@ -1,10 +1,11 @@
 import './treino.css';
 import { AiOutlineArrowRight } from 'react-icons/ai';
 
-function Treino ({ nome, quantidade, adicional, imagem }) 
+function Treino ({ chave, nome, quantidade, adicional, imagem }) 
 {
+    console.log(chave)
     return (
-        <li className="card-treino">
+        <li key={chave} className="card-treino">
             <h3>{nome}</h3>
             <img src={imagem}/>
             <h4>{quantidade}</h4>
