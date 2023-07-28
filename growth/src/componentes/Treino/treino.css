@@ -1,6 +1,7 @@
 .card-treino {
     width: 31%;
     list-style: none;
+    position: relative;
     background-color: #71797E;
     margin-bottom: 20px;
     margin-right: 3.5%;
@@ -9,24 +10,21 @@
     box-shadow: 2px 2px 5px black;
 }
 
-    .card-treino:nth-child(3n) {
-        margin-right: 0px;
-    }
-
 .card-treino h3 {
-    font-size: 18px;
+    font-size: 22px;
     margin-bottom: 10px;
     text-decoration: underline;
 }
 
 .card-treino h4 {
-    font-size: 18px;
+    font-size: 20px;
     margin: 5px 0;
 }
 
 .card-treino p {
     font-weight: bold;
-    font-size: 14px;
+    color: #6b242c;
+    font-size: 16px;
     margin: 10px 0 20px 0;
     font-style: italic;
 }
@@ -36,4 +34,27 @@
     height: 250px;
     border-radius: 10px;
     object-fit: cover;
+    animation: none;
+}
+
+@media (max-width: 600px) {
+  .card-treino {
+    width: 100%;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  .card-treino {
+    width: 48.25%;
+  }
+
+  .card-treino:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1023px) {
+    .card-treino:nth-child(3n) {
+        margin-right: 0px;
+    }
 }

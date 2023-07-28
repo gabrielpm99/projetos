@@ -7,11 +7,13 @@ import Header from './componentes/Header'
 function App() {
 
   let [treinos, setTreinos] = useState([]);
-  let [treinosFiltrados, setTreinosFiltrados] = useState([{treinos}]);
+  let [treinosFiltrados, setTreinosFiltrados] = useState([]);
+
+  let [dia, setDia] = useState("A");
   
   let [diasDeTreino, setDiasDeTreino] = useState([
     "A", "B", "C", "D", "E"
-  ])
+  ]);
 
   useEffect(() => 
   {
@@ -21,7 +23,7 @@ function App() {
     const dados = await requisicao.json();
 
     setTreinos(dados.treinos);
-    setTreinosFiltrados(dados.treinos);
+    setTreinosFiltrados(dados.treinos.filter((treino) => treino.dia === "A"))
   })()
   }, [])
 
@@ -29,7 +31,7 @@ function App() {
   {
     setTreinosFiltrados(treinos.filter((treino) => treino.dia === dia))
 
-    //evento.target.parentNode.classList;
+    setDia(dia);
   }
 
   return (
@@ -39,14 +41,16 @@ function App() {
           dias={diasDeTreino}
           filtrarTreino={filtrarTreino}
         />
+        <p className='diaDeTreino'>Treino {dia}</p>
         <ul className='lista-treinos'>
           {treinosFiltrados.map((treino) => <Treino
-            chave={treino.nome}
-            quantidade={treino.quantidade}
-            nome={treino.nome}
-            adicional={treino.adicional}
-            imagem={treino.imagem}
-          />)}
+              chave={treino.nome}
+              quantidade={treino.quantidade}
+              nome={treino.nome}
+              adicional={treino.adicional}
+              imagem={treino.imagem}
+            />
+          )}
         </ul>
       </header>
     </div>

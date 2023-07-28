@@ -2,14 +2,20 @@
     margin-left: 3rem;
 }
 
+.navbar-item a {
+    display: flex;
+    padding: 8px 20px;
+}
+
 .navbar-item {
     cursor: pointer;
     font-size: 22px;
+    letter-spacing: 1px;
     background-color: #71797E;
-    padding: 8px 20px;
     border-radius: 8px;
     transition: 0.15s;
     box-shadow: 2px 2px 3px white;
+    box-sizing: border-box;
 }
 
     .navbar-item:hover {
@@ -20,3 +26,21 @@
     .active {
         color: gray;
     }
+
+@media (max-width: 600px) {
+  .header .navbar .navbar-item {
+    margin: 0 0 15px 0;
+    width: 90%;
+  }
+
+  .navbar-item a {
+    flex-direction: column;
+    align-self: center;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  .navbar-item:not(.navbar-item:first-child) {
+    margin-left: 2.5rem;
+  }
+}

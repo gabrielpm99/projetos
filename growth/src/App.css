@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 .App-logo {
@@ -44,4 +44,18 @@
   flex-wrap: wrap;
   margin: 0 auto;
   padding-inline-start: 0;
+}
+
+.diaDeTreino {
+  display: flex;
+  font-size: 30px;
+  letter-spacing: 1px;
+  text-decoration: underline;
+  margin: 0 0 3rem 0;
+}
+
+@media (max-width: 600px) {
+  .lista-treinos {
+    flex-direction: column;
+  }
 }

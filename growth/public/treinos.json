@@ -51,6 +51,24 @@
             "adicional": "Drop"
         },
         {
+            "nome": "Abdominal supra",
+            "quantidade": "3x de 20",
+            "dia": "A",
+            "imagem": "./imagens/abdominal-supra.webp"
+        },
+        {
+            "nome": "Abdominal oblíquo",
+            "quantidade": "3x de 30",
+            "dia": "A",
+            "imagem": "./imagens/abdominal-obliquo.gif"
+        },
+        {
+            "nome": "Abdominal infra",
+            "quantidade": "3x de 15",
+            "dia": "A",
+            "imagem": "./imagens/abdominal-infra.webp"
+        },
+        {
             "nome": "Agachamento livre",
             "quantidade": "4x de 6 a 10",
             "dia": "B",
@@ -149,24 +167,24 @@
         },
         {
             "nome": "Abdominal supra",
-            "quantidade": "4x de 20",
+            "quantidade": "3x de 20",
             "dia": "C",
             "imagem": "./imagens/abdominal-supra.webp" 
         },
         {
             "nome": "Abdominal oblíquo",
-            "quantidade": "4x de 30",
+            "quantidade": "3x de 30",
             "dia": "C",
             "imagem": "./imagens/abdominal-obliquo.gif"
         },
         {
             "nome": "Abdominal infra",
-            "quantidade": "4x de 15",
+            "quantidade": "3x de 15",
             "dia": "C",
             "imagem": "./imagens/abdominal-infra.webp" 
         },
         {
-            "nome": "Desenvolvimento sentado na barra guiada",
+            "nome": "Desenvolvimento com barra",
             "quantidade": "4x de 6 a 10",
             "dia": "D",
             "imagem": "./imagens/desenvolvimento-sentado.webp"
@@ -184,7 +202,7 @@
             "imagem": "./imagens/elevacao-lateral.webp"
         },
         {
-            "nome": "Elevação frontal banco",
+            "nome": "Elevação frontal",
             "quantidade": "4x de 15",
             "dia": "D",
             "imagem": "./imagens/elevacao-frontal.gif"
@@ -194,12 +212,6 @@
             "quantidade": "4x de 6 a 10",
             "dia": "D",
             "imagem": "./imagens/elevacao-crossover.gif"
-        },
-        {
-            "nome": "Remada alta no cross over",
-            "quantidade": "4x de 6 a 10",
-            "dia": "E",
-            "imagem": "./imagens/remada-alta.webp"
         },
         {
             "nome": "Ombro fly",
@@ -212,6 +224,30 @@
             "quantidade": "4x de 6 a 10",
             "dia": "D",
             "imagem": "./imagens/encolhimento-barra.gif"
+        },
+        {
+            "nome": "Abdominal nas barras paralelas",
+            "quantidade": "3x de 10",
+            "dia": "D",
+            "imagem": "./imagens/abdominal-barra.gif"
+        },
+        {
+            "nome": "Abdominal supra",
+            "quantidade": "3x de 20",
+            "dia": "D",
+            "imagem": "./imagens/abdominal-supra.webp"
+        },
+        {
+            "nome": "Montanha",
+            "quantidade": "3x de 30",
+            "dia": "D",
+            "imagem": "./imagens/montanha.webp"
+        },
+        {
+            "nome": "Remada alta no cross over",
+            "quantidade": "4x de 6 a 10",
+            "dia": "E",
+            "imagem": "./imagens/remada-alta.webp"
         },
         {
             "nome": "Agachamento livre",
