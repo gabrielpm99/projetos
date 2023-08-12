@@ -1,0 +1,107 @@
+body {
+    background-color: #F8F8FF;
+}
+
+span {
+    text-decoration: underline;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #600000;
+    padding: 1rem 0;
+}
+
+.navbar .active {
+    opacity: 1;
+}
+
+.navbar-item a {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+.navbar-item a:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.navbar-item img {
+    max-width: 50px;
+    margin-right: 1rem;
+}
+
+
+
+main {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.secoes {
+    margin: 2rem 0 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secoes h1, h2, h3, p  {
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+
+.secoes .secao-titulo {
+    font-size: 35px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid black;
+}
+
+.secoes .secao-info {
+    font-size: 23px;
+    text-align: justify;
+    margin-bottom: 3rem;
+}
+
+.secoes .secao-texto {
+    font-size: 23px;
+    font-style: italic;
+}
+
+.secoes .lista {
+    width: 75%;
+}
+
+.secoes .lista .item {
+    display: flex;
+    flex-direction: column;
+}
+
+.secoes .lista .item-titulo {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 23px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid black;
+}
+
+.secoes .lista .item-texto {
+    text-align: justify;
+    font-size: 21px;
+}
