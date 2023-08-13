@@ -9,7 +9,7 @@
 }
 
 html {
-    font-family: Open Sans;
+    font-family: 'Open Sans';
 }
 
 body {
@@ -140,4 +140,26 @@ main {
     transition: 0.5s;
     font-family: 'Indie Flower';
     font-weight: bold;
+}
+
+
+
+/*RESPONSIVO*/
+
+@media (max-width: 767px) {
+    main {
+        width: 90%;
+    }
+    
+    .navbar {
+        padding: 1.5rem 0;
+    }
+
+    .navbar-item a {
+        font-size: 50px;
+    }
+
+    .navbar-item a img {
+        max-width: 70px;
+    }
 }
