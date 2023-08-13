@@ -13,7 +13,9 @@ html {
 }
 
 body {
-    background-color: #F8F8FF;
+    background-image: url(imagens/background.png);
+    background-position: center top;
+    background-size: 100%;
 }
 
 span {
@@ -140,26 +142,4 @@ main {
     transition: 0.5s;
     font-family: 'Indie Flower';
     font-weight: bold;
-}
-
-
-
-/*RESPONSIVO*/
-
-@media (max-width: 767px) {
-    main {
-        width: 90%;
-    }
-    
-    .navbar {
-        padding: 1.5rem 0;
-    }
-
-    .navbar-item a {
-        font-size: 50px;
-    }
-
-    .navbar-item a img {
-        max-width: 70px;
-    }
 }
