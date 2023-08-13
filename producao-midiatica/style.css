@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Indie Flower';
-    src: url(IndieFlower-Regular.ttf);
+    src: url('IndieFlower-Regular.ttf');
 }
 
 @font-face {
     font-family: 'Open Sans';
-    src: url(OpenSans-Regular.ttf);
+    src: url('OpenSans-Regular.ttf');
 }
 
 html {
@@ -64,8 +64,9 @@ span {
 }
 
 main {
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
+    font-weight: bold;
 }
 
 .secoes {
@@ -73,6 +74,10 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.secoes:last-child {
+    margin-bottom: 0;
 }
 
 .secoes h1, h2, h3, p  {
@@ -113,7 +118,7 @@ main {
 .secoes .lista .item-titulo {
     text-align: center;
     margin: 0 auto;
-    font-size: 23px;
+    font-size: 27px;
     text-transform: uppercase;
     font-weight: bold;
     margin-bottom: 1rem;
@@ -122,7 +127,7 @@ main {
 }
 
 .secoes .lista .item-imagem {
-    width: 50%;
+    width: 65%;
     margin: 0 auto;
     margin-bottom: 2rem;
     border: 2px solid black;
@@ -142,4 +147,88 @@ main {
     transition: 0.5s;
     font-family: 'Indie Flower';
     font-weight: bold;
+}
+
+
+
+
+@media(max-width: 767px) {
+    main {
+        width: 90%;
+    }
+
+    .navbar-item a {
+        display: flex;
+        flex-direction: column;
+        font-size: 21px;
+    }
+
+    .navbar-item img {
+        max-width: 70px;
+        max-height: 42px;
+        margin: 0 0 0.5rem 0;
+    }
+
+    .secoes .secao-titulo {
+        font-size: 29px;
+    }
+
+    .secoes .secao-info {
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .secoes .secao-texto {
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .secoes .lista {
+        width: 85%;
+    }
+
+    .secoes .lista .item-imagem {
+        width: 100%;
+    }
+
+    .secoes .lista .item-texto {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .secoes .lista .item-titulo {
+        font-size: 23px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .navbar-item a {
+        font-size: 27px;
+    }
+
+    .secoes .secao-titulo {
+        font-size: 31px;
+    }
+
+    .secoes .secao-info {
+        font-size: 19px;
+    }
+    
+    .secoes .secao-texto {
+        font-size: 19px;
+    }
+
+    .lista .item .item-imagem {
+        width: 90%;
+    }
+
+    .secoes .lista .item-titulo {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .lista .item .item-imagem {
+        width: 80%;
+    }
 }
