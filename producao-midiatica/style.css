@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'Indie Flower';
+    src: url(IndieFlower-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(OpenSans-Regular.ttf);
+}
+
+html {
+    font-family: Open Sans;
+}
+
 body {
     background-color: #F8F8FF;
 }
@@ -43,8 +57,12 @@ span {
 
 
 
+.hidden {
+    display: none;
+}
+
 main {
-    width: 85%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -58,7 +76,7 @@ main {
 .secoes h1, h2, h3, p  {
     margin-bottom: 2rem;
     letter-spacing: 1px;
-    line-height: 28px;
+    line-height: 31px;
 }
 
 .secoes .secao-titulo {
@@ -101,7 +119,25 @@ main {
     border-bottom: 3px solid black;
 }
 
+.secoes .lista .item-imagem {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px gray;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.secoes .lista .item-imagem:hover {
+    transform: scale(1.02);
+}
+
 .secoes .lista .item-texto {
     text-align: justify;
-    font-size: 21px;
+    font-size: 23px;
+    transition: 0.5s;
+    font-family: 'Indie Flower';
+    font-weight: bold;
 }
