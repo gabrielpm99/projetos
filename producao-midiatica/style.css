@@ -83,7 +83,7 @@ main {
 .secoes h1, h2, h3, p  {
     margin-bottom: 2rem;
     letter-spacing: 1px;
-    line-height: 31px;
+    line-height: 32px;
 }
 
 .secoes .secao-titulo {
@@ -96,7 +96,7 @@ main {
 }
 
 .secoes .secao-info {
-    font-size: 23px;
+    font-size: 21px;
     text-align: justify;
     margin-bottom: 3rem;
 }
@@ -127,7 +127,7 @@ main {
 }
 
 .secoes .lista .item-imagem {
-    width: 65%;
+    width: 60%;
     margin: 0 auto;
     margin-bottom: 2rem;
     border: 2px solid black;
@@ -138,7 +138,7 @@ main {
 }
 
 .secoes .lista .item-imagem:hover {
-    transform: scale(1.02);
+    transform: scale(1.1);
 }
 
 .secoes .lista .item-texto {
