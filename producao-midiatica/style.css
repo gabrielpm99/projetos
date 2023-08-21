@@ -113,6 +113,7 @@ main {
 .secoes .lista .item {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .secoes .lista .item-titulo {
@@ -138,7 +139,7 @@ main {
 }
 
 .secoes .lista .item-imagem:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .secoes .lista .item-texto {
@@ -147,6 +148,22 @@ main {
     transition: 0.5s;
     font-family: 'Indie Flower';
     font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.secoes .lista .item-icone {
+    width: 12%;
+    margin-bottom: 2rem;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.secoes .lista .item-icone:hover {
+    transform: scale(1.05);
+}
+
+.secoes .lista .item-icone:active {
+    transform: scale(1.1);
 }
 
 
@@ -199,6 +216,10 @@ main {
     .secoes .lista .item-titulo {
         font-size: 23px;
     }
+
+    .secoes .lista .item-icone {
+        width: 30%;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -225,10 +246,17 @@ main {
     .secoes .lista .item-titulo {
         font-size: 25px;
     }
+
+    .secoes .lista .item-icone {
+        width: 20%;
+    }
 }
 
 @media (min-width: 1024px) and (max-width: 1279px) {
     .lista .item .item-imagem {
         width: 80%;
+    }
+    .secoes .lista .item-icone {
+        width: 15%;
     }
 }

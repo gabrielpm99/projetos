@@ -7,5 +7,18 @@ const imagens = document.querySelectorAll(".item-imagem");
 
 imagens.forEach((imagem) => imagem.addEventListener("click", () => 
 {
+    const botaoPlay = imagem.parentNode.querySelector(".item-icone");
+    
     imagem.parentNode.querySelector(".item-texto").classList.toggle("hidden");
+   
+    if(botaoPlay) {
+        botaoPlay.classList.toggle("hidden");
+    }
+}))
+
+const botoes = document.querySelectorAll(".item-icone");
+
+botoes.forEach((botao) => botao.addEventListener('click', () => 
+{
+    botao.parentNode.querySelector('audio').play()
 }))
