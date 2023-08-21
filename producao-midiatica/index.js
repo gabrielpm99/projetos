@@ -22,3 +22,21 @@ botoes.forEach((botao) => botao.addEventListener('click', () =>
 {
     botao.parentNode.querySelector('audio').play()
 }))
+
+
+window.addEventListener('scroll', () => 
+{
+    if(window.innerWidth >= 1024) {
+        const alturaScroll = document.documentElement.scrollTop;
+        const navbar = document.querySelector(".navbar");
+        const main = document.querySelector('main');
+
+        if(alturaScroll >= 70) {
+            navbar.style.position = 'fixed';
+            main.style.marginTop = '175px'
+        } else {
+            navbar.style.position = 'static'
+            main.style.marginTop = '0px'
+        }
+    }
+})
