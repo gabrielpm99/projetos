@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.jogo {
+    position: relative;
+    display: flex;
+    background: linear-gradient(#A9A9A9, #E8E8E8);
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.lista-participantes {
+    display: flex;
+    width: 75%;
+    padding: 2rem;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.participante {
+    position: relative;
+    width: 32%;
+    background-color: #F5F5F5;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-size: 18px;
+    padding: 0.5rem;
+    margin: 0 2% 1rem 0;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: 0.1s;
+}
+
+    .participante button {
+        background-color: red;
+        color: white;
+        width: 20px;
+        height: 20px;
+        font-size: 13px;
+        font-weight: bold;
+        border: none;
+        border-radius: 50%;
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        cursor: pointer;
+        transition: 0.1s;
+    }
+
+        .participante button:hover {
+            transform: scale(1.1);
+        }
+
+    .participante:nth-child(3n) {
+        margin-right: 0;
+    }
+
+.eliminado {
+    background-color: red;
+    text-decoration: line-through;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 75%;
+}
+
+.add {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.campo-add {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.btn {
+    background: #F5F5F5;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.05s;
+}
+
+    .btn:hover {
+        background-color: #E1E1E1;
+    }
+
+    .btn:active {
+        background-color: #C5C5C5;
+    } 
+
+.btn-play {
+    padding: 0.5rem 3rem;
+}
+
+@media (max-width: 767px) {
+    .jogo {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .jogo {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .jogo {
+        width: 75%;
+    }
+}
