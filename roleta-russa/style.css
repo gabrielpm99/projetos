@@ -73,6 +73,17 @@ main {
     text-decoration: line-through;
 }
 
+.vitorioso {
+    background-color: gold;
+}
+
+    .vitorioso img {
+        position: absolute;
+        width: 40px;
+        top: -35px;
+        left: calc(50% - 20px);
+    }
+
 .botoes {
     display: flex;
     flex-direction: column;
