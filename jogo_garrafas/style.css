@@ -1,0 +1,107 @@
+:root {
+    --tamanho-garrafa: 45px;
+    --margin-garrafa: 0.5rem;
+    --tamanho-caixa: calc((var(--tamanho-garrafa) * 8) + var(--margin-garrafa) * 8);
+    --tamanho-mensagem: 60px;
+}
+
+body {
+    background: url("src/bg.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+main {
+    position: relative;
+}
+
+.garrafas_sorteadas {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.escolhidas {
+    position: relative;
+    top: 15px;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.caixa_container {
+    position: relative;
+}
+
+.caixa {
+    width: var(--tamanho-caixa);
+    filter: drop-shadow(1px 1px 2px);
+}
+
+.lista_garrafas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.garrafa {
+    cursor: pointer;
+    transition: 0.1s;
+    z-index: 99;
+}
+
+    .garrafa:not(.garrafa:last-child) {
+        margin-right: var(--margin-garrafa);
+    }
+
+    .garrafa:hover {
+        transform: scale(1.05) translate(0, calc(var(--tamanho-garrafa) * -0.1));
+    }
+
+.garrafa img {
+    width: var(--tamanho-garrafa);
+    height: 100%;
+    filter: drop-shadow(0 2px 1px);
+}
+
+.mensagem_container {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    top: 50%;
+}
+
+.mensagem {
+    color: black;
+    text-shadow: 2px 2px 2px white;
+    font-size: var(--tamanho-mensagem);
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+
+/* RESPONSIVO */
+
+@media(max-width: 767px) {
+    :root {
+        --tamanho-garrafa: 30px;
+        --tamanho-mensagem: 40px;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1023px) {
+    :root {
+        --tamanho-garrafa: 35px;
+        --tamanho-mensagem: 50px;
+    }
+}
