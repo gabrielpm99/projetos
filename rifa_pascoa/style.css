@@ -75,7 +75,7 @@ button {
     cursor: pointer;
 }
 
-@media(max-width: 320px) {
+@media(min-width: 320px) {
     header {
         background-size: 75%;
     }
