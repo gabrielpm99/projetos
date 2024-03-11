@@ -84,8 +84,13 @@ button {
         width: 90%;
     }
 
+    li {
+        width: 9%;
+        margin: 0 1% 1% 0;
+    }
+
     p {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     button {
