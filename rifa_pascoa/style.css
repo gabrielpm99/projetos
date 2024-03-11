@@ -30,8 +30,8 @@ ul {
 li {
     display: flex;
     justify-content: center;
-    width: 8%;
-    margin: 0 2% 2% 0;
+    width: 9%;
+    margin: 0 1% 1% 0;
     list-style: none;
     background-color: #66402b;
     cursor: pointer;
@@ -75,18 +75,13 @@ button {
     cursor: pointer;
 }
 
-@media(min-width: 320px) {
+@media(min-width: 320px) and (max-width: 499px) {
     header {
         background-size: 75%;
     }
 
     ul {
         width: 90%;
-    }
-
-    li {
-        width: 9%;
-        margin: 0 1% 1% 0;
     }
 
     p {
@@ -98,23 +93,28 @@ button {
     }
 }
 
-@media(min-width: 321px) and (max-width: 768px) {
+@media(min-width: 500px) and (max-width: 767px) {
     header {
-        background-size: 40%;
+        background-size: 50%;
     }
 
     ul {
-        width: 75%;
+        width: 85%;
+    }
+
+
+    button {
+        font-size: 18px;
     }
 }
 
-@media(min-width: 769px) and (max-width: 1024px) {
+@media(min-width: 768px) and (max-width: 1023px) {
     ul {
         width: 60%;
     }
 }
 
-@media(min-width: 1025px) and (max-width: 1280px) {
+@media(min-width: 1024px) and (max-width: 1280px) {
     ul {
         width: 50%;
     }
