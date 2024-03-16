@@ -43,11 +43,15 @@ h1 {
     cursor: pointer;
     transition: 0.1s;
     letter-spacing: 1px;
-    opacity: 0.8;
+    opacity: 0.75;
 }
 
 .btns li button:hover {
     transform: scale(1.05);
+}
+
+.btns li button:focus {
+    transform: scale(1.1);
 }
 
 #lista_aulas {
