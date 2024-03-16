@@ -1,11 +1,11 @@
-//Pega a lista de aulas e o nome da turma
+//Pega a lista de aulas e o título, com o nome da turma
 const aulasList = document.getElementById("lista_aulas");
 const tituloTurma = document.getElementById("titulo_turma");
 
 
-//Pega os botões
-const diasbtns = document.querySelectorAll(".dias");
-const turmasbtns = document.querySelectorAll(".turmas");
+//Pega os botões dos dias da semana e os das turmas
+const btnsDias = document.querySelectorAll(".dias");
+const btnsTurmas = document.querySelectorAll(".turmas");
 
 
 //Armazena o dia e turma escolhidos
@@ -25,21 +25,36 @@ async function apiHorarios()
 
 
 //Adiciona um evento em cada botão
-diasbtns.forEach((btn) => btn.addEventListener('click', () => 
+btnsDias.forEach((btn) => btn.addEventListener('click', () => 
 {
     //Armazena o dia escolhido
     escolherDia(btn);
-    turmasbtns.forEach((btn) => btn.addEventListener('click', () => 
+    
+    //Chama a função que irá buscar o horário no arquivo .json. Porém, só irá funcionar caso a turma já tenha sido escolhida
+    if(turmaEscolhida != undefined) {
+        apiHorarios();
+    }
+
+    //Função que adiciona um estilo específico para o botão pressionado
+    selecionado(btnsDias, btn);
+}));
+
+btnsTurmas.forEach((btn) => btn.addEventListener('click', () => 
     {
         //Armazena a turma escolhida
         escolherTurma(btn);
-        //Chama a função que irá buscar o horário no arquivo .json
-        apiHorarios();
+        
+        //Chama a função que irá buscar o horário no arquivo .json. Porém, só irá funcionar caso o dia já tenha sido escolhido
+        if(diaEscolhido != undefined) {
+            apiHorarios();
+        }
+
+        //Função que adiciona um estilo específico para o botão pressionado
+        selecionado(btnsTurmas, btn);
     }));
-}));
 
 
-//Pega o nome do dia e da turma
+//Armazena o nome do dia e da turma nas respectivas variáveis
 function escolherDia(dia) 
 {
     diaEscolhido = dia.innerHTML;
@@ -68,7 +83,7 @@ function montarHorario(horario)
 }
 
 
-//Adiciona cor ao elemento
+//Adiciona cor ao elemento, de acordo com o professor
 function adicionaCor(elemento) 
 {
     switch(elemento) {
@@ -116,4 +131,18 @@ function exibirHorario(horario)
 { 
     tituloTurma.innerHTML = turmaEscolhida;
     aulasList.innerHTML = horario;
+}
+
+
+//Adiciona um estilo específico para o elemento selecionado
+function selecionado(elementos, btnSelecionado) 
+{
+    //Remove a classe "selecionado" de todos os botões
+    elementos.forEach((elemento) => 
+    {
+        elemento.classList.remove("selecionado");
+    });
+
+    //Adiciona a classe "selecionado" apenas ao botão pressionado
+    btnSelecionado.classList.toggle("selecionado");
 }

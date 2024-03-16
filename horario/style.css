@@ -43,6 +43,7 @@ h1 {
     cursor: pointer;
     transition: 0.1s;
     letter-spacing: 1px;
+    opacity: 0.8;
 }
 
 .btns li button:hover {
@@ -65,6 +66,12 @@ h1 {
     font-size: 16px;
     text-align: center;
     margin: 2px 0;
+}
+
+.btns .selecionado {
+    border-color: red;
+    transform: scale(1.1);
+    opacity: 1;
 }
 
 
