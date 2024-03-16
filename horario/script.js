@@ -144,5 +144,5 @@ function selecionado(elementos, btnSelecionado)
     });
 
     //Adiciona a classe "selecionado" apenas ao botão pressionado
-    btnSelecionado.classList.toggle("selecionado");
+    btnSelecionado.classList.add("selecionado");
 }
