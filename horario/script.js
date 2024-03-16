@@ -104,6 +104,8 @@ function adicionaCor(elemento)
             return '#719aba';
         case "Luciana":
             return '#978957';
+        case "Heloisa":
+            return '#453b43';
     }
 }
 

@@ -33,7 +33,7 @@ h1 {
     background-color: #ffbd03;
 }
 
-ul li button {
+.btns li button {
     width: 10vw;
     padding: 10px 0;
     margin: 0 10px;
@@ -45,7 +45,7 @@ ul li button {
     letter-spacing: 1px;
 }
 
-ul li button:hover {
+.btns li button:hover {
     transform: scale(1.05);
 }
 
@@ -56,7 +56,7 @@ ul li button:hover {
 }
 
 .aulas {
-    width: 25%;
+    width: 30%;
     padding: 10px 15px;
     border: 1px solid black;
     text-transform: uppercase;
@@ -64,4 +64,64 @@ ul li button:hover {
     letter-spacing: 1px;
     font-size: 16px;
     text-align: center;
+    margin: 2px 0;
+}
+
+
+@media(max-width: 767px) {
+    header {
+        padding: 10px 0;
+    }
+    
+    ul {
+        flex-wrap: wrap;
+    }
+
+    .btns li {
+        margin: 5px 0;
+    }
+
+    .btns li button {
+        width: 40vw;
+    }
+
+    #lista_aulas {
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .aulas {
+        width: 75%;
+    }
+}
+
+@media(min-width: 501px) and (max-width: 767px) {
+    .btns li button {
+        width: 25vw;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1279px) {
+
+    h1 {
+        margin-top: 40px;
+    }
+    
+    .btns li button {
+        width: 15vw;
+    }
+
+    .aulas {
+        width: 60%;
+    }
+}
+
+@media(min-width: 1024px) and (max-width: 1279px) {  
+    
+    .aulas {
+        width: 40%;
+    }
 }
