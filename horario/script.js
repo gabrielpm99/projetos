@@ -1,11 +1,15 @@
 //Pega a lista de aulas e o título, com o nome da turma
-const aulasList = document.getElementById("lista_aulas");
-const tituloTurma = document.getElementById("titulo_turma");
+const aulasList = pegarElementoId("lista_aulas");
+const tituloTurma = pegarElementoId("titulo_turma");
 
 
 //Pega os botões dos dias da semana e os das turmas
 const btnsDias = document.querySelectorAll(".dias");
 const btnsTurmas = document.querySelectorAll(".turmas");
+
+
+//Pega os botões de escolha entre Regular e Técnico
+const regularTecnicoBtns = document.querySelectorAll(".regTec");
 
 
 //Armazena o dia e turma escolhidos
@@ -24,7 +28,7 @@ async function apiHorarios()
 }
 
 
-//Adiciona um evento em cada botão
+//Adiciona um evento em cada botão dos dias da semana
 btnsDias.forEach((btn) => btn.addEventListener('click', () => 
 {
     //Armazena o dia escolhido
@@ -39,6 +43,8 @@ btnsDias.forEach((btn) => btn.addEventListener('click', () =>
     selecionado(btnsDias, btn);
 }));
 
+
+//Adiciona um evento em cada botão das turmas
 btnsTurmas.forEach((btn) => btn.addEventListener('click', () => 
     {
         //Armazena a turma escolhida
@@ -52,6 +58,17 @@ btnsTurmas.forEach((btn) => btn.addEventListener('click', () =>
         //Função que adiciona um estilo específico para o botão pressionado
         selecionado(btnsTurmas, btn);
     }));
+
+
+//Adiciona um evento em cada botão de escolha entre Regular ou Técnico
+regularTecnicoBtns.forEach((btn) => btn.addEventListener('click', () => 
+{
+    //Função que irá analisar qual foi escolhido, ou Regular ou Técnico
+    regular_ou_tecnico(btn.innerHTML);
+
+    //Função que adiciona um estilo específico para o botão pressionado
+    selecionado(regularTecnicoBtns, btn);
+}));
 
 
 //Armazena o nome do dia e da turma nas respectivas variáveis
@@ -68,7 +85,7 @@ function escolherTurma(turma)
 
 //Monta os elementos da lista
 function montarHorario(horario) 
-{
+{ 
     var array = "";
 
     for(let i = 1; i <= 6; i++) {
@@ -121,6 +138,10 @@ function adicionaCor(elemento)
             return '#978957';
         case "Heloisa":
             return '#453b43';
+        case "Álvaro":
+            return '#cdba82';
+        case "Kaline":
+            return '#cdba82';
     }
 }
 
@@ -145,4 +166,26 @@ function selecionado(elementos, btnSelecionado)
 
     //Adiciona a classe "selecionado" apenas ao botão pressionado
     btnSelecionado.classList.add("selecionado");
+}
+
+function regular_ou_tecnico(enfase) 
+{
+    //Pega a primeira letra da string e coloca ela em minúsculo
+    const escolhido = enfase.split('')[0].toLowerCase();
+
+    switch(escolhido) {
+        case "r": 
+            pegarElementoId("regular").classList.remove("hidden");
+            pegarElementoId("tecnico").classList.add("hidden");
+        break;
+        case "t":
+            pegarElementoId("regular").classList.add("hidden");
+            pegarElementoId("tecnico").classList.remove("hidden");
+        break;
+    }
+}
+
+function pegarElementoId(elemento) 
+{
+    return document.getElementById(elemento);
 }
