@@ -168,23 +168,34 @@ function selecionado(elementos, btnSelecionado)
     btnSelecionado.classList.add("selecionado");
 }
 
+
+//Essa função irá mostrar as turmas da ênfase escolhida
 function regular_ou_tecnico(enfase) 
 {
     //Pega a primeira letra da string e coloca ela em minúsculo
     const escolhido = enfase.split('')[0].toLowerCase();
 
+    //Dependendo da ênfase escolhida, esse switch case irá mostrar a ênfase escolhida e esconder a outra
     switch(escolhido) {
         case "r": 
+            //Mostra o "Regular"
             pegarElementoId("regular").classList.remove("hidden");
+
+            //Esconde o "Técnico"
             pegarElementoId("tecnico").classList.add("hidden");
         break;
         case "t":
+            //Esconde o "Regular"
             pegarElementoId("regular").classList.add("hidden");
+
+            //Mostra o "Técnico"
             pegarElementoId("tecnico").classList.remove("hidden");
         break;
     }
 }
 
+
+//Essa função irá retornar o elemento de acordo com o ID passado por parâmetro
 function pegarElementoId(elemento) 
 {
     return document.getElementById(elemento);
