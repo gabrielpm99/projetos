@@ -18,6 +18,10 @@ var turmaEscolhida;
 var enfaseEscolhida;
 
 
+//Armazena o id dos botões pressionados
+var idDia, idTurma, idEnfase;
+
+
 
 //Pega as informações do arquivo ".json"
 //E também chama a função que irá montar e exibir o horário
@@ -43,6 +47,10 @@ btnsDias.forEach((btn) => btn.addEventListener('click', () =>
 
     //Função que adiciona um estilo específico para o botão pressionado
     selecionado(btnsDias, btn);
+
+
+    //Armazena o id do botão
+    idDia = btn.id;
 }));
 
 
@@ -59,6 +67,10 @@ btnsTurmas.forEach((btn) => btn.addEventListener('click', () =>
 
         //Função que adiciona um estilo específico para o botão pressionado
         selecionado(btnsTurmas, btn);
+
+
+        //Armazena o id do botão
+        idTurma = btn.id;
     }));
 
 
@@ -73,6 +85,10 @@ regularTecnicoBtns.forEach((btn) => btn.addEventListener('click', () =>
 
     //Função que adiciona um estilo específico para o botão pressionado
     selecionado(regularTecnicoBtns, btn);
+
+
+    //Armazena o id do botão
+    idEnfase = btn.id;
 }));
 
 
@@ -163,7 +179,7 @@ function exibirHorario(horario)
     tituloTurma.innerHTML = turmaEscolhida;
     aulasList.innerHTML = horario;
 
-    guardarUltimoHorarioAcessado(enfaseEscolhida, diaEscolhido, turmaEscolhida);
+    guardarUltimoHorarioAcessado(idEnfase, idDia, idTurma);
 }
 
 
@@ -220,6 +236,8 @@ function guardarUltimoHorarioAcessado(enfase, dia, turma)
     localStorage.setItem("dia", dia);
     localStorage.setItem("turma", turma);
     localStorage.setItem("enfase", enfase);
+
+    console.log(enfase,dia,turma)
 }
 
 
