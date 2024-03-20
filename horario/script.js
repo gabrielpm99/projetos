@@ -12,9 +12,11 @@ const btnsTurmas = document.querySelectorAll(".turmas");
 const regularTecnicoBtns = document.querySelectorAll(".regTec");
 
 
-//Armazena o dia e turma escolhidos
+//Armazena o dia, turma e ênfase escolhidos
 var diaEscolhido;
 var turmaEscolhida;
+var enfaseEscolhida;
+
 
 
 //Pega as informações do arquivo ".json"
@@ -63,6 +65,9 @@ btnsTurmas.forEach((btn) => btn.addEventListener('click', () =>
 //Adiciona um evento em cada botão de escolha entre Regular ou Técnico
 regularTecnicoBtns.forEach((btn) => btn.addEventListener('click', () => 
 {
+    //Armazena a ênfase escolhida
+    escolherEnfase(btn);
+    
     //Função que irá analisar qual foi escolhido, ou Regular ou Técnico
     regular_ou_tecnico(btn.innerHTML);
 
@@ -71,7 +76,7 @@ regularTecnicoBtns.forEach((btn) => btn.addEventListener('click', () =>
 }));
 
 
-//Armazena o nome do dia e da turma nas respectivas variáveis
+//Armazena o nome do dia, da turma e da ênfase nas respectivas variáveis
 function escolherDia(dia) 
 {
     diaEscolhido = dia.innerHTML;
@@ -80,6 +85,11 @@ function escolherDia(dia)
 function escolherTurma(turma) 
 {
     turmaEscolhida = turma.innerHTML;
+}
+
+function escolherEnfase(enfase) 
+{
+    enfaseEscolhida = enfase.innerHTML;
 }
 
 
@@ -152,6 +162,8 @@ function exibirHorario(horario)
 { 
     tituloTurma.innerHTML = turmaEscolhida;
     aulasList.innerHTML = horario;
+
+    guardarUltimoHorarioAcessado(enfaseEscolhida, diaEscolhido, turmaEscolhida);
 }
 
 
@@ -200,3 +212,24 @@ function pegarElementoId(elemento)
 {
     return document.getElementById(elemento);
 }
+
+
+//Essa função guarda no LocalStorage o último horário acessado
+function guardarUltimoHorarioAcessado(enfase, dia, turma) 
+{
+    localStorage.setItem("dia", dia);
+    localStorage.setItem("turma", turma);
+    localStorage.setItem("enfase", enfase);
+}
+
+
+//Toda vez que a página for aberta, irá mostrar o último horário que você consultou
+window.addEventListener('load', () => 
+{
+    const btns = [pegarElementoId(localStorage.getItem("dia")),
+        pegarElementoId(localStorage.getItem("turma")),
+        pegarElementoId(localStorage.getItem("enfase"))
+    ];
+
+    btns.forEach((btn) => btn.click());
+});
