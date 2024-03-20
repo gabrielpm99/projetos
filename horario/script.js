@@ -236,8 +236,6 @@ function guardarUltimoHorarioAcessado(enfase, dia, turma)
     localStorage.setItem("dia", dia);
     localStorage.setItem("turma", turma);
     localStorage.setItem("enfase", enfase);
-
-    console.log(enfase,dia,turma)
 }
 
 
