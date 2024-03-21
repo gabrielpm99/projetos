@@ -27,7 +27,7 @@ var idDia, idTurma, idEnfase;
 //E também chama a função que irá montar e exibir o horário
 async function apiHorarios() 
 {
-    const conexao = await fetch("https://gabrielpm99.github.io/projetos/horario/horario.json");
+    const conexao = await fetch("https://gabrielpm99.github.io/projetos/horarioMatutino/horario.json");
     const conexaoConvertida = await conexao.json();
 
     exibirHorario(montarHorario(conexaoConvertida[diaEscolhido][turmaEscolhida]));
