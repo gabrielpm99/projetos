@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #3f63d4;
+    margin-bottom: 25px;
+    padding: 25px 0;
+}
+
+ul {
+    list-style: none;
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.escolher button {
+    background-color: lightgray;
+}
+
+.escolher {
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin: 50px 0 30px 0;
+}
+
+.dias {
+    background-color: #dd7973;
+}
+
+.turmas {
+    background-color: #ffbd03;
+}
+
+.btns li button {
+    width: 10vw;
+    padding: 10px 0;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.1s;
+    letter-spacing: 1px;
+    opacity: 0.75;
+}
+
+.btns li button:hover {
+    transform: scale(1.05);
+}
+
+.btns li button:focus {
+    transform: scale(1.1);
+}
+
+#lista_aulas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aulas {
+    width: 30%;
+    padding: 10px 15px;
+    border: 1px solid black;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 16px;
+    text-align: center;
+    margin: 2px 0;
+}
+
+.btns .selecionado {
+    border-color: red;
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.hidden {
+    display: none;
+}
+
+
+@media(max-width: 767px) {
+    header {
+        padding: 10px 0;
+    }
+
+    .btns li {
+        margin: 5px 0;
+    }
+
+    .btns li button {
+        width: 40vw;
+    }
+
+    #lista_aulas {
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .aulas {
+        width: 75%;
+    }
+}
+
+@media(min-width: 501px) and (max-width: 767px) {
+    .btns li button {
+        width: 25vw;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1279px) {
+
+    h1 {
+        margin-top: 40px;
+    }
+    
+    .btns li button {
+        width: 15vw;
+    }
+
+    .aulas {
+        width: 60%;
+    }
+
+    .btns .turmas {
+        width: 9vw;
+    }
+}
+
+@media(min-width: 1024px) and (max-width: 1279px) {  
+    
+    .aulas {
+        width: 40%;
+    }
+
+    .btns .turmas {
+        width: 8vw;
+    }
+}
+
+@media(min-width: 1280px) {  
+
+    .btns .turmas {
+        width: 7vw;
+    }
+}

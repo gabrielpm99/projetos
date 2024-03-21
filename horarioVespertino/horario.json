@@ -1,0 +1,370 @@
+{
+    "Segunda": {
+        "6º A": {
+            "1": {"materia": "Matemática", "professor": "Erika"},
+            "2": {"materia": "Educação Física", "professor": "Sueli"},
+            "3": {"materia": "Português", "professor": "Bruno"},
+            "4": {"materia": "Matemática", "professor": "Erika"},
+            "5": {"materia": "Ensino Religioso", "professor": "Heloisa"}
+        },
+
+        "6º B": {
+            "1": {"materia": "Português", "professor": "Bruno"},
+            "2": {"materia": "Português", "professor": "Bruno"},
+            "3": {"materia": "Arte", "professor": "Bendita"},
+            "4": {"materia": "Ensino Religioso", "professor": "Heloisa"},
+            "5": {"materia": "Arte", "professor": "Bendita"}
+            
+        },
+
+        "7º A": {
+            "1": {"materia": "Arte", "professor": "Bendita"},
+            "2": {"materia": "Ciências", "professor": "Silvana"},
+            "3": {"materia": "Ensino Religioso", "professor": "Heloisa"},
+            "4": {"materia": "História", "professor": "Antônio"},
+            "5": {"materia": "História", "professor": "Antônio"}
+            
+        },
+
+        "7º B": {
+            "1": {"materia": "História", "professor": "Antônio"},
+            "2": {"materia": "História", "professor": "Antônio"},
+            "3": {"materia": "Educação Física", "professor": "Sueli"},
+            "4": {"materia": "Arte", "professor": "Bendita"},
+            "5": {"materia": "Ciências", "professor": "Silvana"}
+            
+        },
+
+        "8º A": {
+            "1": {"materia": "Ensino Religioso", "professor": "Heloisa"},
+            "2": {"materia": "Arte", "professor": "Bendita"},
+            "3": {"materia": "História", "professor": "Antônio"},
+            "4": {"materia": "Português", "professor": "Lúcia"},
+            "5": {"materia": "Português", "professor": "Lúcia"}
+            
+        },
+        
+        "8º B": {
+            "1": {"materia": "Educação Física", "professor": "Sueli"},
+            "2": {"materia": "Ensino Religioso", "professor": "Heloisa"},
+            "3": {"materia": "Geografia", "professor": "João Carlos"},
+            "4": {"materia": "Geografia", "professor": "João Carlos"},
+            "5": {"materia": "Português", "professor": "Bruno"}
+            
+        },
+
+        "9º A": {
+            "1": {"materia": "Português", "professor": "Lúcia"},
+            "2": {"materia": "Português", "professor": "Lúcia"},
+            "3": {"materia": "Ciências", "professor": "Silvana"},
+            "4": {"materia": "Ciências", "professor": "Silvana"},
+            "5": {"materia": "Geografia", "professor": "João Carlos"}
+            
+        },
+
+        "9º B": {
+            "1": {"materia": "Ciências", "professor": "Silvana"},
+            "2": {"materia": "Geografia", "professor": "João Carlos"},
+            "3": {"materia": "Português", "professor": "Lúcia"},
+            "4": {"materia": "Educação Física", "professor": "Sueli"},
+            "5": {"materia": "Matemática", "professor": "Erika"}
+            
+        }
+    },
+
+    "Terça": {
+        "6º A": {
+            "1": {"materia": "Educação Física", "professor": "Sueli"},
+            "2": {"materia": "Português", "professor": "Bruno"},
+            "3": {"materia": "Ciências", "professor": "Silvana"},
+            "4": {"materia": "Inglês", "professor": "Teresa"},
+            "5": {"materia": "Inglês", "professor": "Teresa"}
+            
+        },
+
+        "6º B": {
+            "1": {"materia": "Inglês", "professor": "Teresa"},
+            "2": {"materia": "Ciências", "professor": "Silvana"},
+            "3": {"materia": "Matemática", "professor": "Erika"},
+            "4": {"materia": "Matemática", "professor": "Erika"},
+            "5": {"materia": "Português", "professor": "Bruno"}
+            
+        },
+
+        "7º A": {
+            "1": {"materia": "Matemática", "professor": "Erika"},
+            "2": {"materia": "Geografia", "professor": "João Carlos"},
+            "3": {"materia": "Inglês", "professor": "Teresa"},
+            "4": {"materia": "Português", "professor": "Bruno"},
+            "5": {"materia": "Educação Física", "professor": "Sueli"}
+            
+        },
+
+        "7º B": {
+            "1": {"materia": "Geografia", "professor": "João Carlos"},
+            "2": {"materia": "Inglês", "professor": "Teresa"},
+            "3": {"materia": "Ensino Religioso", "professor": "Heloisa"},
+            "4": {"materia": "Ciências", "professor": "Silvana"},
+            "5": {"materia": "Ciências", "professor": "Silvana"}
+            
+        },
+
+        "8º A": {
+            "1": {"materia": "Ciências", "professor": "Kaline"},
+            "2": {"materia": "Ciências", "professor": "Kaline"},
+            "3": {"materia": "Matemática", "professor": "Robson"},
+            "4": {"materia": "Matemática", "professor": "Robson"},
+            "5": {"materia": "Geografia", "professor": "João Carlos"}
+            
+        },
+        
+        "8º B": {
+            "1": {"materia": "Matemática", "professor": "Robson"},
+            "2": {"materia": "Matemática", "professor": "Robson"},
+            "3": {"materia": "Português", "professor": "Bruno"},
+            "4": {"materia": "Ciências", "professor": "Kaline"},
+            "5": {"materia": "Ciências", "professor": "Kaline"}
+            
+        },
+
+        "9º A": {
+            "1": {"materia": "Ensino Religioso", "professor": "Heloisa"},
+            "2": {"materia": "Educação Física", "professor": "Sueli"},
+            "3": {"materia": "Inglês", "professor": "Luciana"},
+            "4": {"materia": "Educação Física", "professor": "Sueli"},
+            "5": {"materia": "Matemática", "professor": "Robson"}
+            
+        },
+
+        "9º B": {
+            "1": {"materia": "Ciências", "professor": "Silvana"},
+            "2": {"materia": "Ensino Religioso", "professor": "Heloisa"},
+            "3": {"materia": "Educação Física", "professor": "Sueli"},
+            "4": {"materia": "Inglês", "professor": "Luciana"},
+            "5": {"materia": "Inglês", "professor": "Luciana"}
+            
+        }
+    },
+
+    "Quarta": {
+        "6º A": {
+            "1": {"materia": "Matemática", "professor": "Erika"},
+            "2": {"materia": "Matemática", "professor": "Erika"},
+            "3": {"materia": "História", "professor": "Antônio"},
+            "4": {"materia": "Português", "professor": "Bruno"},
+            "5": {"materia": "Português", "professor": "Bruno"}
+            
+        },
+
+        "6º B": {
+            "1": {"materia": "Ciências", "professor": "Silvana"},
+            "2": {"materia": "Ciências", "professor": "Silvana"},
+            "3": {"materia": "Matemática", "professor": "Erika"},
+            "4": {"materia": "História", "professor": "Antônio"},
+            "5": {"materia": "História", "professor": "Antônio"}
+            
+        },
+
+        "7º A": {
+            "1": {"materia": "Português", "professor": "Bruno"},
+            "2": {"materia": "Geografia", "professor": "João Carlos"},
+            "3": {"materia": "Educação Física", "professor": "Sueli"},
+            "4": {"materia": "Matemática", "professor": "Erika"},
+            "5": {"materia": "Matemática", "professor": "Erika"}
+            
+        },
+
+        "7º B": {
+            "1": {"materia": "História", "professor": "Antônio"},
+            "2": {"materia": "Português", "professor": "Bruno"},
+            "3": {"materia": "Português", "professor": "Bruno"},
+            "4": {"materia": "Geografia", "professor": "João Carlos"},
+            "5": {"materia": "Educação Física", "professor": "Sueli"}
+            
+        },
+
+        "8º A": {
+            "1": {"materia": "Educação Física", "professor": "Sueli"},
+            "2": {"materia": "História", "professor": "Antônio"},
+            "3": {"materia": "Arte", "professor": "Bendita"},
+            "4": {"materia": "Educação Física", "professor": "Sueli"},
+            "5": {"materia": "Matemática", "professor": "Robson"}
+            
+        },
+        
+        "8º B": {
+            "1": {"materia": "Matemática", "professor": "Robson"},
+            "2": {"materia": "Matemática", "professor": "Robson"},
+            "3": {"materia": "Geografia", "professor": "João Carlos"},
+            "4": {"materia": "Arte", "professor": "Bendita"},
+            "5": {"materia": "Arte", "professor": "Bendita"}
+            
+        },
+
+        "9º A": {
+            "1": {"materia": "Arte", "professor": "Bendita"},
+            "2": {"materia": "Arte", "professor": "Bendita"},
+            "3": {"materia": "Matemática", "professor": "Robson"},
+            "4": {"materia": "Matemática", "professor": "Robson"},
+            "5": {"materia": "Ciências", "professor": "Silvana"}
+            
+        },
+
+        "9º B": {
+            "1": {"materia": "Arte", "professor": "Renan"},
+            "2": {"materia": "Arte", "professor": "Renan"},
+            "3": {"materia": "Ciências", "professor": "Silvana"},
+            "4": {"materia": "Ciências", "professor": "Silvana"},
+            "5": {"materia": "Geografia", "professor": "João Carlos"}
+            
+        }
+    },
+
+    "Quinta": {
+        "6º A": {
+            "1": {"materia": "Geografia", "professor": "Carlos Alex"},
+            "2": {"materia": "Geografia", "professor": "Carlos Alex"},
+            "3": {"materia": "História", "professor": "Antônio"},
+            "4": {"materia": "Ciências", "professor": "Silvana"},
+            "5": {"materia": "Ciências", "professor": "Silvana"}
+            
+        },
+
+        "6º B": {
+            "1": {"materia": "Inglês", "professor": "Teresa"},
+            "2": {"materia": "História", "professor": "Antônio"},
+            "3": {"materia": "Geografia", "professor": "Carlos Alex"},
+            "4": {"materia": "Geografia", "professor": "Carlos Alex"},
+            "5": {"materia": "Matemática", "professor": "Erika"}
+            
+        },
+
+        "7º A": {
+            "1": {"materia": "Ciências", "professor": "Silvana"},
+            "2": {"materia": "Matemática", "professor": "Erika"},
+            "3": {"materia": "Inglês", "professor": "Teresa"},
+            "4": {"materia": "História", "professor": "Antônio"},
+            "5": {"materia": "História", "professor": "Antônio"}
+            
+        },
+
+        "7º B": {
+            "1": {"materia": "História", "professor": "Antônio"},
+            "2": {"materia": "Português", "professor": "Bruno"},
+            "3": {"materia": "Matemática", "professor": "Erika"},
+            "4": {"materia": "Matemática", "professor": "Erika"},
+            "5": {"materia": "Inglês", "professor": "Teresa"}
+            
+        },
+
+        "8º A": {
+            "1": {"materia": "Ciências", "professor": "Kaline"},
+            "2": {"materia": "Ciências", "professor": "Kaline"},
+            "3": {"materia": "Português", "professor": "Lúcia"},
+            "4": {"materia": "Geografia", "professor": "João Carlos"},
+            "5": {"materia": "Geografia", "professor": "João Carlos"}
+            
+        },
+        
+        "8º B": {
+            "1": {"materia": "Português", "professor": "Bruno"},
+            "2": {"materia": "Geografia", "professor": "João Carlos"},
+            "3": {"materia": "Português", "professor": "Bruno"},
+            "4": {"materia": "Ciências", "professor": "Kaline"},
+            "5": {"materia": "Ciências", "professor": "Kaline"}
+            
+        },
+
+        "9º A": {
+            "1": {"materia": "Português", "professor": "Lúcia"},
+            "2": {"materia": "Ciências", "professor": "Silvana"},
+            "3": {"materia": "Geografia", "professor": "João Carlos"},
+            "4": {"materia": "História", "professor": "Douglas"},
+            "5": {"materia": "História", "professor": "Douglas"}
+            
+        },
+
+        "9º B": {
+            "1": {"materia": "Matemática", "professor": "Erika"},
+            "2": {"materia": "História", "professor": "Douglas"},
+            "3": {"materia": "História", "professor": "Douglas"},
+            "4": {"materia": "Português", "professor": "Lúcia"},
+            "5": {"materia": "Português", "professor": "Lúcia"}
+            
+        }
+    },
+
+    "Sexta": {
+        "6º A": {
+            "1": {"materia": "Ciências", "professor": "Silvana"},
+            "2": {"materia": "Arte", "professor": "Bendita"},
+            "3": {"materia": "Arte", "professor": "Bendita"},
+            "4": {"materia": "História", "professor": "Antônio"},
+            "5": {"materia": "História", "professor": "Antônio"}
+            
+        },
+
+        "6º B": {
+            "1": {"materia": "Educação Física", "professor": "Sueli"},
+            "2": {"materia": "Educação Física", "professor": "Sueli"},
+            "3": {"materia": "História", "professor": "Antônio"},
+            "4": {"materia": "Português", "professor": "Bruno"},
+            "5": {"materia": "Ciências", "professor": "Silvana"}
+            
+        },
+
+        "7º A": {
+            "1": {"materia": "Português", "professor": "Bruno"},
+            "2": {"materia": "Português", "professor": "Bruno"},
+            "3": {"materia": "Ciências", "professor": "Silvana"},
+            "4": {"materia": "Ciências", "professor": "Silvana"},
+            "5": {"materia": "Arte", "professor": "Bendita"}
+            
+        },
+
+        "7º B": {
+            "1": {"materia": "Arte", "professor": "Bendita"},
+            "2": {"materia": "Ciências", "professor": "Silvana"},
+            "3": {"materia": "Português", "professor": "Bruno"},
+            "4": {"materia": "Matemática", "professor": "Erika"},
+            "5": {"materia": "Matemática", "professor": "Erika"}
+            
+        },
+
+        "8º A": {
+            "1": {"materia": "Geografia", "professor": "João Carlos"},
+            "2": {"materia": "Inglês", "professor": "Luciana"},
+            "3": {"materia": "Inglês", "professor": "Luciana"},
+            "4": {"materia": "Português", "professor": "Lúcia"},
+            "5": {"materia": "Matemática", "professor": "Robson"}
+            
+        },
+        
+        "8º B": {
+            "1": {"materia": "História", "professor": "Antônio"},
+            "2": {"materia": "História", "professor": "Antônio"},
+            "3": {"materia": "Educação Física", "professor": "Sueli"},
+            "4": {"materia": "Inglês", "professor": "Luciana"},
+            "5": {"materia": "Inglês", "professor": "Luciana"}
+            
+        },
+
+        "9º A": {
+            "1": {"materia": "Inglês", "professor": "Luciana"},
+            "2": {"materia": "Geografia", "professor": "João Carlos"},
+            "3": {"materia": "Geografia", "professor": "João Carlos"},
+            "4": {"materia": "Matemática", "professor": "Robson"},
+            "5": {"materia": "Português", "professor": "Lúcia"}
+            
+        },
+
+        "9º B": {
+            "1": {"materia": "Português", "professor": "Lúcia"},
+            "2": {"materia": "Matemática", "professor": "Erika"},
+            "3": {"materia": "Matemática", "professor": "Erika"},
+            "4": {"materia": "Geografia", "professor": "João Carlos"},
+            "5": {"materia": "Geografia", "professor": "João Carlos"}
+            
+        }
+    }
+}
