@@ -73,7 +73,7 @@ ul li button {
     font-size: 18px;
 }
 
-ul li button:focus {
+ul li button:focus:not(header ul li button) {
     transform: scale(0.98);
 }
 
