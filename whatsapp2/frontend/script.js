@@ -48,6 +48,8 @@ function logar (event)
     websocket.onmessage = processarMensagem;
 
     mostrarMensagensSalvas();
+
+    rolarTela();
 }
 
 
