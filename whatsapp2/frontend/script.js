@@ -44,7 +44,7 @@ function logar (event)
     loginContainer.style.display = "none";
     chatContainer.style.display = "flex";
 
-    websocket = new WebSocket("wss://whatsapp2-u2sn.onrender.com");
+    websocket = new WebSocket("ws://localhost:8080");
     websocket.onmessage = processarMensagem;
 
     mostrarMensagensSalvas();
