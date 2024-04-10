@@ -1,24 +1,3 @@
-const db = new XMLHttpRequest();
-db.open("GET", "http://localhost:3000");
-db.onload = () => 
-{
-    if (db.status >= 200 && db.status < 300) {
-        // Se a solicitação for bem sucedida, manipular os dados recebidos
-        var dados = JSON.parse(db.responseText);
-        transformarDadosDb(dados);
-    } else {
-        // Se houver um erro na solicitação, exibir uma mensagem de erro
-        console.error('Erro ao obter os dados:', db.statusText);
-    }
-};
-
-db.onerror = function () {
-    // Se houver um erro na conexão, exibir uma mensagem de erro
-    console.error('Erro de conexão ao obter os dados.');
-};
-
-db.send();
-
 const materias = ["Artes", "Biologia", "Química", "História", "UC2", "UC1", "UC3", "UC4", "UC5", "UC6", "Português", "Matemática", "Filosofia", "Sociologia", "Educação Física", "Geografia", "Eletiva 1", "Espanhol", "Inglês", "Física", "Projeto de Vida"].sort();
 const seta_direita = buscarElemento("seta_direita");
 const seta_esquerda = buscarElemento("seta_esquerda");
@@ -37,6 +16,18 @@ const dataAtual = new Date();
 const atividadesArray = [];
 
 const atividadesContainer = buscarElemento("atividades_container");
+
+
+
+async function conexao () 
+{
+    const con = await fetch("./dados.json");
+    const conConvertida = await con.json();
+
+    conConvertida.push(JSON.stringify({nome:"gabriel"}));
+}
+
+conexao();
 
 
 
@@ -85,21 +76,6 @@ seta_esquerda.addEventListener("click", () =>
 });
 
 
-
-function transformarDadosDb (dados) 
-{
-    dados.forEach((dado) => 
-    {  
-        const objAtividade = {
-            materia: dado.MATERIA,
-            data: dado.DATA_ENTREGA,
-            titulo: dado.TITULO,
-            informacoes: dado.INFORMACOES
-        };
-        
-        atividadesArray.push(objAtividade);
-    });
-}
 
 function mostrarAtividades (materia, estado) 
 {
