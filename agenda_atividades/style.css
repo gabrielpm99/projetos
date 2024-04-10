@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+body {
+    background-color: #FFF8F0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav_container {
+    background-color: #9DD9D2;
+    width: 100%;
+}
+
+#nav_bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav_anchor {
+    font-size: 30px;
+    margin: 0 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.nav_arrows {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+    .nav_arrows:hover {
+        transform: scale(0.95);
+    }
+
+.nav_arrows img {
+    width: 75px;
+}
+
+
+
+#entregues_container {
+    display: flex;
+    gap: 50px;
+}
+
+.entregues_text {
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.1s;
+}
+
+.entregues_text:hover {
+    color: #555;
+}
+
+
+
+.escolhido {
+    color: #555;
+    border-bottom: 2px solid #555;
+}
+
+
+
+#atividades_container {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    row-gap: 10px;
+}
+
+.atividades_card {
+    background-color: #FF8811;
+    display: flex;
+    align-items: center;
+    width: 49%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.card_informacoes {
+    border-left: 1px solid black;
+    padding: 10px;
+}
+
+.card_informacoes h1 {
+    margin-bottom: 15px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.card_data {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+}
