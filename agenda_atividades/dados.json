@@ -12,6 +12,18 @@
         "informacoes": "Página 18: Explore; Página 32: Questão 1; Página 33: Questão 6"
     },
     {
+        "materia": "UC2",
+        "data": "02/05",
+        "titulo": "Energia renovável",
+        "informacoes": "Pesquisar o que é energia renovável e não-renovável e citar exemplos de ambas"
+    },
+    {
+        "materia": "UC2",
+        "data": "02/05",
+        "titulo": "Tipos de poluição",
+        "informacoes": "Pesquisar os tipos de poluição e suas respectivas consequências"
+    },
+    {
         "materia": "Química",
         "data": "02/05",
         "titulo": "Visto nos cadernos",
@@ -34,5 +46,17 @@
         "data": "08/05",
         "titulo": "Pesquisa sobre um autor surrealista",
         "informacoes": "Responder as questões passadas em sala, com base no autor que você pesquisou"
+    },
+    {
+        "materia": "Sociologia",
+        "data": "08/05",
+        "titulo": "Dominação Legítima na sociedade atual",
+        "informacoes": "Analisar, na sociedade atual, um dos três tipos de Dominação Legítima, segundo Weber."
+    },
+    {
+        "materia": "Filosofia",
+        "data": "06/05",
+        "titulo": "Mapas mentais",
+        "informacoes": "Montar os mapas mentais, de acordo com o modelo 'Liz Kimura', dos filósofos Thomas Hobbes, John Locke e Jean-Jacques Rousseau"
     }
 ]
