@@ -161,8 +161,10 @@ function mostrarMateriaSalva ()
     const materia = localStorage.getItem("materia");
     const estado = buscarElemento(localStorage.getItem("estado"));
 
-    mostrarNaTela(materiaAtual, materia);
-    estado.click();
+    if(materia && estado) {
+        mostrarNaTela(materiaAtual, materia);
+        estado.click();
+    }
 }
 
 
