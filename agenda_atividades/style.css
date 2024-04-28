@@ -68,6 +68,7 @@ section {
     cursor: pointer;
     font-weight: bold;
     transition: 0.1s;
+    text-align: center;
 }
 
 .entregues_text:hover {
@@ -115,4 +116,44 @@ section {
     font-size: 20px;
     font-weight: bold;
     padding: 20px;
+}
+
+.finalizadas {
+    opacity: 0.7;
+    filter: brightness(0.7);
+}
+
+
+@media only screen and (max-width: 767px) {
+    #atividades_container {
+        flex-direction: column;
+    }
+
+    #entregues_container {
+        gap: 10px;
+    }
+
+    #entregues_container a {
+        font-size: 18px;
+    }
+
+    #nav_bar a {
+        font-size: 24px;
+    }
+
+    #nav_bar img {
+        width: 50px;
+    }
+
+    .atividades_card {
+        width: 100%;
+    }
+
+    .atividades_card .card_data, .atividades_card h1 {
+        font-size: 18px;
+    }
+
+    .atividades_card p{
+        font-size: 16px;
+    }
 }

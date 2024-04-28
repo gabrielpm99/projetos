@@ -1,3 +1,38 @@
 [
-    
+    {
+        "materia": "Matemática",
+        "data": "30/04",
+        "titulo": "Pesquisa sobre René Descartes",
+        "informacoes": "Bibliografia, Biografia, Trabalhos(Plano Cartesiano) e Frases importantes"
+    },
+    {
+        "materia": "História",
+        "data": "02/05",
+        "titulo": "Atividade do livro",
+        "informacoes": "Página 18: Explore; Página 32: Questão 1; Página 33: Questão 6"
+    },
+    {
+        "materia": "Química",
+        "data": "02/05",
+        "titulo": "Visto nos cadernos",
+        "informacoes": "Todas as pesquisas e atividades que ela passou nesse bimestre"
+    },
+    {
+        "materia": "Geografia",
+        "data": "29/04",
+        "titulo": "Apresentações",
+        "informacoes": "Apresentações sobre os temas dados em aula"
+    },
+    {
+        "materia": "UC1",
+        "data": "30/04",
+        "titulo": "Materiais Recicláveis",
+        "informacoes": "Pesquisar sobre o material reciclável dado ao seu grupo"
+    },
+    {
+        "materia": "Artes",
+        "data": "08/05",
+        "titulo": "Pesquisa sobre um autor surrealista",
+        "informacoes": "Responder as questões passadas em sala, com base no autor que você pesquisou"
+    }
 ]

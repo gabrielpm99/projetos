@@ -24,11 +24,8 @@ async function conexao ()
     const con = await fetch("./dados.json");
     const conConvertida = await con.json();
 
-    conConvertida.push(JSON.stringify({nome:"gabriel"}));
+    conConvertida.forEach((atividade) => atividadesArray.push(atividade));
 }
-
-conexao();
-
 
 
 pendentes.addEventListener("click", () => 
@@ -46,14 +43,14 @@ finalizadas.addEventListener("click", () =>
 
 seta_direita.addEventListener("click", () => 
 { 
-    pos = posicaoMateria(materiaAtual);
-    proxPos = pos+1;
+    var pos = posicaoMateria(materiaAtual);
+    var proxPos = pos+1;
     
     if(pos == materias.length-1) {
         proxPos = 0;
     }
     
-    proxMateria = materias[proxPos];
+    var proxMateria = materias[proxPos];
 
     mostrarNaTela(materiaAtual, proxMateria);
     mostrarAtividades(materiaAtual.innerHTML, pendentes_finalizadas);
@@ -62,14 +59,14 @@ seta_direita.addEventListener("click", () =>
 
 seta_esquerda.addEventListener("click", () => 
 {
-    pos = posicaoMateria(materiaAtual);
-    posAnterior = pos-1;
+    var pos = posicaoMateria(materiaAtual);
+    var posAnterior = pos-1;
 
     if(pos == 0) {
         posAnterior = materias.length-1;
     }
 
-    MateriaAnterior = materias[posAnterior];
+    var MateriaAnterior = materias[posAnterior];
 
     mostrarNaTela(materiaAtual, MateriaAnterior);
     mostrarAtividades(materiaAtual.innerHTML, pendentes_finalizadas);
@@ -95,6 +92,7 @@ function mostrarAtividades (materia, estado)
     });
 
     criarCards(atividadesFiltradasEstado);
+    salvarMateria(materiaAtual.innerHTML, estado);
 }
 
 function criarCards (arrayAtividades) 
@@ -104,7 +102,7 @@ function criarCards (arrayAtividades)
     arrayAtividades.forEach((atividade) => 
     {
         const div = `
-            <div class="atividades_card">
+            <div class="atividades_card ${atividade.estado}">
                 <div>
                     <p class="card_data">${atividade.data}</p>
                     
@@ -130,6 +128,7 @@ function adicionarEscolhido (elemento, pai)
 
     elemento.classList.add("escolhido");
     pendentes_finalizadas = elemento.id;
+    salvarMateria(materiaAtual.innerHTML, elemento.id);
 }
 
 function mostrarNaTela (output, value) 
@@ -150,4 +149,26 @@ function buscarElemento(id)
 }
 
 
-window.addEventListener("load", () => mostrarAtividades(materiaAtual.innerHTML, pendentes_finalizadas));
+function salvarMateria (materiaAtual, estado) 
+{
+    localStorage.setItem("materia", materiaAtual);
+    localStorage.setItem("estado", estado);
+}
+
+
+function mostrarMateriaSalva () 
+{
+    const materia = localStorage.getItem("materia");
+    const estado = buscarElemento(localStorage.getItem("estado"));
+
+    mostrarNaTela(materiaAtual, materia);
+    estado.click();
+}
+
+
+window.addEventListener("load", async () => 
+{
+    await conexao();
+    mostrarMateriaSalva();
+    mostrarAtividades(materiaAtual.innerHTML, pendentes_finalizadas);
+});
