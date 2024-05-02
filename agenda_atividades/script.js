@@ -83,11 +83,11 @@ function mostrarAtividades (materia, estado)
 
     const atividadesFiltradasEstado = atividadesFiltradas.filter((atividade) => 
     {
-        const dataAlterada = `2024-${atividade.data.slice(3,5)}-${atividade.data.slice(0,2)}`;
+        const dataAlterada = `${dataAtual.getFullYear()},${atividade.data.slice(3,5)},${atividade.data.slice(0,2)}, 00:00:00`;
         const dataAtividade = new Date(dataAlterada);
         
         atividade.estado = dataAtividade > dataAtual ? "pendentes" : "finalizadas";
-
+        console.log(dataAtividade, dataAtual)
         return atividade.estado == estado;
     });
 
@@ -163,7 +163,7 @@ function mostrarMateriaSalva ()
 
     if(materia && estado) {
         mostrarNaTela(materiaAtual, materia);
-        estado.click();
+        estado.click(); 
     }
 }
 
