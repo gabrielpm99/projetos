@@ -64,5 +64,11 @@
         "data": "07/05",
         "titulo": "Currículo",
         "informacoes": "Montar um currículo para o desenho da personagem entregue em sala, com base nas informações escritas no quadro"
+    },
+    {
+        "materia": "UC3",
+        "data": "10/05",
+        "titulo": "Utilização da porcentagem",
+        "informacoes": "Pesquisar e trazer um exemplo em que a porcentagem se faz presente no meio ambiente. Mostrando o que a porcentagem indica e como ela é representada matematicamente"
     }
 ]

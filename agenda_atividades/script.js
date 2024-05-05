@@ -23,7 +23,7 @@ async function conexao ()
 {
     const con = await fetch("./dados.json");
     const conConvertida = await con.json();
-
+    conConvertida.push("teste")
     conConvertida.forEach((atividade) => atividadesArray.push(atividade));
 }
 
@@ -87,7 +87,7 @@ function mostrarAtividades (materia, estado)
         const dataAtividade = new Date(dataAlterada);
         
         atividade.estado = dataAtividade > dataAtual ? "pendentes" : "finalizadas";
-        console.log(dataAtividade, dataAtual)
+
         return atividade.estado == estado;
     });
 
