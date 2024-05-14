@@ -129,11 +129,21 @@ ul li button:hover {
 }
 
 #lista_aulas li {
+    position: relative;
     width: 45%;
     padding: 10px 0;
     text-transform: uppercase;
     font-weight: bold;
     border: 1px solid black;
+}
+
+#lista_aulas li p {
+    position: absolute;
+    margin: 0 0 0 10px;
+    top: 25%;
+    left: 0;
+    font-size: 19px;
+    font-style: italic;
 }
 
 
@@ -165,6 +175,17 @@ ul li button:hover {
     #lista_aulas li {
         width: 85%;
         margin: 0;
+        padding-top: 30px;
+    }
+
+    #lista_aulas li p {
+        top: 0;
+        left: auto;
+        margin: 5px 0 0 0;
+    }
+
+    #lista_aulas .intervalo {
+        padding: 10px 0;
     }
 }
 

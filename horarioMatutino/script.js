@@ -113,13 +113,22 @@ function escolherEnfase(enfase)
 function montarHorario(horario) 
 { 
     var array = "";
+    const horas = ["7:00", "7:50", "8:40", "9:50", "10:40", "11:30"];
+    var elemento;
 
     for(let i = 1; i <= 6; i++) {
         //Monta uma tag "li" em formato de string
-        const elemento = `<li style="background-color: ${adicionaCor(horario[i].professor)};" class='aulas'>${horario[i].materia} - ${horario[i].professor}</li>`;
+            
+        elemento = `<li style="background-color: ${adicionaCor(horario[i].professor)};" class='aulas'><p>${horas[i-1]}</p>${horario[i].materia} - ${horario[i].professor}</li>`;
+
+        if (i == 3) {
+            elemento += `<li class="intervalo">Intervalo</li>`;
+        }
+        console.log(elemento)
 
         //Armazena cada string à variável array, formando uma string com várias tags
         array += elemento;
+
     }
 
     return array;
