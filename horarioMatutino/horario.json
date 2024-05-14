@@ -5,7 +5,7 @@
             "2": {"materia": "Educação Física", "professor": "Lizandre"},
             "3": {"materia": "Sociologia", "professor": "Ricardo"},
             "4": {"materia": "História", "professor": "Lílian"},
-            "5": {"materia": "Eletiva 1", "professor": "Lílian"},
+            "5": {"materia": "História", "professor": "Lílian"},
             "6": {"materia": "Filosofia", "professor": "José Milanez"}
         },
 
@@ -66,18 +66,18 @@
 
     "Terça": {
         "1º Regular": {
-            "1": {"materia": "Eletiva 2", "professor": "Ricardo"},
+            "1": {"materia": "Português", "professor": "Regina"},
             "2": {"materia": "Inglês", "professor": "Luciana"},
-            "3": {"materia": "Português", "professor": "Regina"},
+            "3": {"materia": "Eletiva 2", "professor": "Ricardo"},
             "4": {"materia": "Projeto de Vida", "professor": "Heloisa"},
             "5": {"materia": "Projeto de Vida", "professor": "Heloisa"},
             "6": {"materia": "Eletiva 2", "professor": "Ricardo"}
         },
 
         "2º A": {
-            "1": {"materia": "UC2", "professor": "Tálisson"},
-            "2": {"materia": "História", "professor": "Lílian"},
-            "3": {"materia": "UC4", "professor": "Ricardo"},
+            "1": {"materia": "UC4", "professor": "Ricardo"},
+            "2": {"materia": "UC2", "professor": "Tálisson"},
+            "3": {"materia": "História", "professor": "Lílian"},
             "4": {"materia": "UC1", "professor": "Regina"},
             "5": {"materia": "Espanhol", "professor": "Tálisson"},
             "6": {"materia": "Matemática", "professor": "Ronaldo"}
@@ -93,11 +93,11 @@
         },
 
         "3º Regular": {
-            "1": {"materia": "UC1", "professor": "Fábio"},
+            "1": {"materia": "Inglês", "professor": "Luciana"},
             "2": {"materia": "UC5", "professor": "Fábio"},
-            "3": {"materia": "UC1", "professor": "Ronaldo"},
+            "3": {"materia": "UC1", "professor": "Fábio"},
             "4": {"materia": "Espanhol", "professor": "Tálisson"},
-            "5": {"materia": "Inglês", "professor": "Luciana"},
+            "5": {"materia": "UC1", "professor": "Ronaldo"},
             "6": {"materia": "UC6", "professor": "Fábio"}
         },
 
@@ -106,8 +106,8 @@
             "2": {"materia": "Física", "professor": "Anderson"},
             "3": {"materia": "Inglês", "professor": "Luciana"},
             "4": {"materia": "Eletiva 1", "professor": "Lílian"},
-            "5": {"materia": "Biologia", "professor": "Kaline"},
-            "6": {"materia": "Biologia", "professor": "Kaline"}
+            "5": {"materia": "Biologia", "professor": "Adriana"},
+            "6": {"materia": "Biologia", "professor": "Adriana"}
         },
         
         "2º Técnico": {
@@ -120,12 +120,12 @@
         },
 
         "3º Técnico": {
-            "1": {"materia": "Português", "professor": "Regina"},
+            "1": {"materia": "Física", "professor": "Fábio"},
             "2": {"materia": "Português", "professor": "Regina"},
-            "3": {"materia": "Física", "professor": "Fábio"},
+            "3": {"materia": "Português", "professor": "Regina"},
             "4": {"materia": "Matemática", "professor": "Ronaldo"},
-            "5": {"materia": "Matemática", "professor": "Ronaldo"},
-            "6": {"materia": "Inglês", "professor": "Luciana"}
+            "5": {"materia": "Inglês", "professor": "Luciana"},
+            "6": {"materia": "Informática", "professor": "Luciana"}
         }
     },
 
@@ -178,19 +178,19 @@
         "2º Técnico": {
             "1": {"materia": "Geografia", "professor": "Paulo Sérgio"},
             "2": {"materia": "Artes", "professor": "Renan"},
-            "3": {"materia": "Educação Física", "professor": "Lizandre"},
+            "3": {"materia": "Primeiros Socorros", "professor": "Álvaro"},
             "4": {"materia": "Gestão e Saúde à Segurança do Trabalho", "professor": "Álvaro"},
-            "5": {"materia": "Primeiros Socorros", "professor": "Álvaro"},
+            "5": {"materia": "Educação Física", "professor": "Lizandre"},
             "6": {"materia": "Espanhol", "professor": "Tálisson"}
         },
 
         "3º Técnico": {
             "1": {"materia": "História", "professor": "Lílian"},
             "2": {"materia": "Gestão Organizacional", "professor": "Álvaro"},
-            "3": {"materia": "Ergonomia", "professor": "Álvaro"},
+            "3": {"materia": "Matemática", "professor": "Ronaldo"},
             "4": {"materia": "Matemática", "professor": "Ronaldo"},
-            "5": {"materia": "TCC", "professor": "Lizandre"},
-            "6": {"materia": "TCC", "professor": "Lizandre"}
+            "5": {"materia": "Ergonomia", "professor": "Álvaro"},
+            "6": {"materia": "Eletiva 1", "professor": "Lizandre"}
         }
     },
 
@@ -242,8 +242,8 @@
         
         "2º Técnico": {
             "1": {"materia": "Estatística Aplicada", "professor": "Álvaro"},
-            "2": {"materia": "Eletiva 1", "professor": "Luciana"},
-            "3": {"materia": "Biologia", "professor": "Isabela"},
+            "2": {"materia": "Biologia", "professor": "Isabela"},
+            "3": {"materia": "Eletiva 1", "professor": "Luciana"},
             "4": {"materia": "Metodologia do Trabalho Científico", "professor": "Fábio"},
             "5": {"materia": "Gestão e Saúde à Segurança do Trabalho", "professor": "Álvaro"},
             "6": {"materia": "Projeto de Vida", "professor": "Lílian"}
@@ -251,17 +251,17 @@
 
         "3º Técnico": {
             "1": {"materia": "Metodologia do Trabalho Científico", "professor": "Fábio"},
-            "2": {"materia": "Biologia", "professor": "Isabela"},
-            "3": {"materia": "Informática", "professor": "Luciana"},
+            "2": {"materia": "Física", "professor": "Fábio"},
+            "3": {"materia": "Biologia", "professor": "Isabela"},
             "4": {"materia": "Gestão Organizacional", "professor": "Álvaro"},
-            "5": {"materia": "Física", "professor": "Fábio"},
-            "6": {"materia": "Eletiva 1", "professor": "Fábio"}
+            "5": {"materia": "TCC", "professor": "Fábio"},
+            "6": {"materia": "TCC", "professor": "Fábio"}
         }
     },
 
     "Sexta": {
         "1º Regular": {
-            "1": {"materia": "História", "professor": "Lílian"},
+            "1": {"materia": "Eletiva 1", "professor": "Lílian"},
             "2": {"materia": "Biologia", "professor": "Isabela"},
             "3": {"materia": "Química", "professor": "Paulo"},
             "4": {"materia": "Química", "professor": "Paulo"},
