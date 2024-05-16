@@ -67,8 +67,20 @@
     },
     {
         "materia": "UC3",
-        "data": "10/05",
+        "data": "17/05",
         "titulo": "Utilização da porcentagem",
         "informacoes": "Pesquisar e trazer um exemplo em que a porcentagem se faz presente no meio ambiente. Mostrando o que a porcentagem indica e como ela é representada matematicamente"
+    },
+    {
+        "materia": "História",
+        "data": "22/05",
+        "titulo": "Fichamento",
+        "informacoes": "Fichamento das páginas 16 a 21"
+    },
+    {
+        "materia": "Sociologia",
+        "data": "22/05",
+        "titulo": "Significado das palavras",
+        "informacoes": "Pesquisar o significado de cada uma das palavras passadas no quadro"
     }
 ]
