@@ -1,0 +1,18 @@
+.header {
+    background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.6)), url('/public/background.jpg');
+    background-size: cover;
+    background-position: 50% 40%;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px 0;
+}
+
+.header div {
+    display: flex;
+    justify-content: center;
+}
+
+.header img {
+    width: 256px;
+    filter: brightness(1.5);
+}
