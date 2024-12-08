@@ -1,0 +1,180 @@
+/* DEFAULT */
+
+body {
+    margin: 0;
+    background-color: #FEFEFE;
+}
+
+li, ul {
+    list-style: none;
+    padding: 0;
+}
+
+a:link, a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+
+/* HEADER */
+
+.header-container {
+    background-color: #A3BCF9;
+    margin: 0;
+    padding: 25px 7.5vw;
+}
+
+.header-container .header-list {
+    display: flex;
+    gap: 5%;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 18px;
+    margin: 0;
+    width: 100%;
+}
+
+.header-list .header-item {
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.header-list .active {
+    border-bottom: 2px solid black;
+}
+
+    .header-list .header-item:hover {
+        transform: scale(1.02);
+    }
+
+    .header-list .header-item:active {
+        transform: scale(1);
+    }
+
+
+/* MAIN */
+
+.main-container {
+    width: 85vw;
+    margin: 0 auto;
+}
+
+.category-list .books-list {
+    display: flex;
+    gap: 1%;
+}
+
+.category-list .category-item {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.category-list .category-item h1 {
+    display: flex;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.category-list .category-item .category-read {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #5783db;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 2px 1px 1px black;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+    .category-list .category-item .category-read:hover {
+        transform: scale(1.02);
+    }
+
+    .category-list .category-item .category-read:active {
+        transform: scale(1);
+        box-shadow: 2px 2px 2px black inset;
+    }
+
+.category-list .books-list .books-item {
+    width: 10%;
+    border: 1px solid gray;
+    border-radius: 8px;
+    transition: 0.1s;
+}
+
+    .category-list .books-list .books-item:hover {
+        transform: scale(1.02);
+    }
+
+.category-list .books-list .books-item img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    border-bottom: 1px solid gray;
+}
+
+.category-list .books-list .books-item p {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    font-size: 14px;
+}
+
+
+/* CADASTRAR */
+
+#form-cadastrar {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+#form-cadastrar .cadastrar-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+#form-cadastrar .cadastrar-label {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+#form-cadastrar .cadastrar-input {
+    padding: 5px 5px;
+}
+
+#form-cadastrar .cadastrar-submit {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #5783db;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    box-shadow: 2px 2px 2px black;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+    #form-cadastrar .cadastrar-submit:hover {
+        transform: scale(1.02);
+    }
+    
+    #form-cadastrar .cadastrar-submit:active {
+        transform: scale(1);
+        box-shadow: 2px 2px 2px black inset;
+    }
+

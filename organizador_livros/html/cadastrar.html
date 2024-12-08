@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="../src/icon.webp">
+        <link rel="stylesheet" href="../css/style.css">
+        <title>Cadastrar livros</title>
+    </head>
+    <body>
+        <header class="header-container">
+            <ul class="header-list">
+                <li class="header-item">
+                    <a href="livros.html">Meus livros</a>
+                </li>
+                <li class="header-item active">
+                    <a href="cadastrar.html">Cadastrar livros</a>
+                </li>
+            </ul>
+        </header>
+        <main class="main-container">
+            <form id="form-cadastrar">
+                <div class="cadastrar-container">
+                    <label class="cadastrar-label" for="nome">Nome do livro</label>
+                    <input class="cadastrar-input" value="Pântano de Sangue" id="nome" type="text" required placeholder="Digite o nome do livro">
+                </div>
+
+                <div class="cadastrar-container">
+                    <label class="cadastrar-label" for="imagem">Imagem do livro</label>
+                    <input class="cadastrar-input" value="../src/PantanodeSangue.jpg" id="imagem" type="text" required placeholder="Digite a URL da imagem do livro">
+                </div>
+
+                <div class="cadastrar-container">
+                    <label class="cadastrar-label" for="link">Link do livro</label>
+                    <input class="cadastrar-input" value="https://www.google.com" id="link" type="text" required placeholder="Digite a URL do livro">
+                </div>
+
+                <div class="cadastrar-container">
+                    <input class="cadastrar-submit" type="submit">
+                </div>
+            </form>
+        </main>
+
+        <script src="../js/cadastrar.js"></script>
+    </body>
+</html>

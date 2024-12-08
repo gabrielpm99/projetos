@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="../src/icon.webp">
+        <link rel="stylesheet" href="../css/style.css">
+        <title>Meus Livros</title>
+    </head>
+    <body>
+        <header class="header-container">
+            <ul class="header-list">
+                <li class="header-item active">
+                    <a href="livros.html">Meus livros</a>
+                </li>
+                <li class="header-item">
+                    <a href="cadastrar.html">Cadastrar livros</a>
+                </li>
+            </ul>
+        </header>
+        <main class="main-container">
+            <ul class="category-list">
+                <li class="category-item">
+                    <h1>Para ler</h1>
+                    <ul id="paraLer" class="books-list">
+                    </ul>
+                    <button class="category-read">Ler mais</button>
+                </li>
+                <li class="category-item">
+                    <h1>Já lidos</h1>
+                    <ul id="jaLidos" class="books-list">
+                    </ul>
+                    <button class="category-read">Ler mais</button>
+                </li>
+            </ul>
+        </main>
+
+        <script src="../js/livros.js"></script>
+    </body>
+</html>
