@@ -10,15 +10,17 @@
   "test": {
     "username": "root",
     "password": null,
-    "database": "database_test",
+    "database": "macielMotoPecas",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "sqlite",
+    "storage": "./db/macielMotoPecas.sqlite"
   },
   "production": {
     "username": "root",
     "password": null,
-    "database": "database_production",
+    "database": "macielMotoPecas",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "sqlite",
+    "storage": "./db/macielMotoPecas.sqlite"
   }
 }
