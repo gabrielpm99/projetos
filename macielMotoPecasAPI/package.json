@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "node index.js",
+    "migrate-prod": "cross-env NODE_ENV=production npx sequelize-cli db:migrate"
   },
   "author": "",
   "license": "ISC",
@@ -11,10 +12,13 @@
   "dependencies": {
     "ajv": "^8.17.1",
     "express": "^4.21.2",
+    "pg": "^8.13.1",
+    "pg-hstore": "^2.3.4",
     "sequelize": "^6.37.5",
     "sqlite3": "^5.1.7"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "nodemon": "^3.1.9"
   }
 }

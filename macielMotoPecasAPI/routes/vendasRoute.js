@@ -33,7 +33,7 @@ router.delete('/:id', async (req, res) => {
     try {
         const venda = await Vendas.findByPk(req.params.id);
         await venda.destroy();
-        res.status(200).json({ msg: "Venda remover com sucesso" });
+        res.status(200).json({ msg: "Venda removida com sucesso" });
     } catch (error) {
         res.status(500).json({ error: "Não foi possível remover a venda" });
         console.error(error);
